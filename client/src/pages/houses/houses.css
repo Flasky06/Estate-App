@@ -1,0 +1,101 @@
+/* houses.css */
+
+.house {
+	margin: 0 2%;
+}
+
+.house-table-container {
+	width: 100%;
+	overflow-x: auto;
+}
+.filter-container {
+	display: flex;
+	flex-direction: column; /* Set column layout for all screen sizes */
+	justify-content: space-between;
+	align-items: stretch;
+	padding: 10px;
+
+	@media (min-width: 992px) {
+		flex-direction: row; /* Revert to row layout for larger screens */
+	}
+}
+
+.price-search {
+	display: flex;
+	flex-direction: row; /* Display price search inputs side by side */
+
+	@media (max-width: 576px) {
+		flex-direction: column; /* Display price search inputs in a column on small screens */
+		margin-top: 10px;
+	}
+}
+
+.search {
+	flex: 1;
+	margin-right: 10px;
+
+	@media (max-width: 768px) {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+}
+
+.search-label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.search-input,
+.search-select {
+	width: 100%;
+	max-width: 300px;
+
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #fff;
+	/* Remove the &:focus section */
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.table th,
+.table td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+.table th {
+	background-color: #f5f5f5;
+}
+
+.table-row:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+/* Add more media queries for finer responsiveness */
+
+/* Small devices */
+@media (max-width: 576px) {
+	.table th,
+	.table td {
+		padding: 8px;
+	}
+}
+
+/* Larger devices */
+@media (min-width: 992px) {
+	.house-table-container {
+		font-size: 18px;
+	}
+
+	.table th,
+	.table td {
+		padding: 12px;
+	}
+}

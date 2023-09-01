@@ -1,0 +1,195 @@
+.house-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.image-component {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.slider-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.slider-image {
+	max-width: 100%;
+	height: auto;
+	margin: 10px 0;
+}
+
+.slider-buttons {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+}
+
+.slider-button {
+	padding: 5px 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.slider-button.prev {
+	margin-left: 10px;
+}
+
+.slider-button.next {
+	margin-right: 10px;
+}
+
+.thumbnail-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.thumbnail {
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	cursor: pointer;
+	opacity: 0.7;
+	border: 1px solid #ddd;
+	transition: opacity 0.3s, border-color 0.3s;
+}
+
+.thumbnail.active {
+	opacity: 1;
+	border-color: #333;
+}
+
+.details {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.details h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.price {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.location,
+.contact {
+	font-size: 16px;
+	margin-top: 5px;
+}
+.house-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.info-container {
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.info-head {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.details-info {
+	font-size: 14px;
+	color: #555;
+}
+
+.profile-icon-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.profile-icon {
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.profile-icon img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.facilities-info {
+	font-size: 14px;
+	color: #555;
+	line-height: 1.4;
+	margin-top: 10px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+	.house-details {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.house-info {
+		padding: 10px;
+	}
+
+	.info-container {
+		margin-bottom: 15px;
+	}
+
+	.profile-icon-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.profile-icon {
+		margin-bottom: 10px;
+	}
+
+	.details-info {
+		text-align: center;
+		font-size: 14px; /* Adjust font size for better readability */
+	}
+	.image-component {
+		padding: 10px;
+	}
+
+	.thumbnail {
+		width: 40px;
+		height: 40px;
+		margin: 5px;
+	}
+}
+
+/* ... (other styles) */
