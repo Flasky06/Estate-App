@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const HouseSchema = mongoose.Schema(
 	{
-		size: {
+		houseType: {
 			type: String,
 			required: true,
 		},
@@ -17,6 +17,10 @@ const HouseSchema = mongoose.Schema(
 			required: false,
 		},
 		location: {
+			type: String,
+			required: true,
+		},
+		facilities: {
 			type: String,
 			required: true,
 		},

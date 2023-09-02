@@ -8,36 +8,23 @@
 	width: 100%;
 	overflow-x: auto;
 }
+
 .filter-container {
 	display: flex;
-	flex-direction: column; /* Set column layout for all screen sizes */
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: stretch;
 	padding: 10px;
-
-	@media (min-width: 992px) {
-		flex-direction: row; /* Revert to row layout for larger screens */
-	}
 }
 
 .price-search {
 	display: flex;
 	flex-direction: row; /* Display price search inputs side by side */
-
-	@media (max-width: 576px) {
-		flex-direction: column; /* Display price search inputs in a column on small screens */
-		margin-top: 10px;
-	}
 }
 
 .search {
 	flex: 1;
 	margin-right: 10px;
-
-	@media (max-width: 768px) {
-		margin-right: 0;
-		margin-bottom: 10px;
-	}
 }
 
 .search-label {
@@ -49,12 +36,10 @@
 .search-select {
 	width: 100%;
 	max-width: 300px;
-
 	padding: 8px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	background-color: #fff;
-	/* Remove the &:focus section */
 }
 
 .table {
@@ -78,24 +63,46 @@
 	background-color: #f2f2f2;
 }
 
-/* Add more media queries for finer responsiveness */
-
-/* Small devices */
+/* Responsive Styles for Small Devices */
 @media (max-width: 576px) {
 	.table th,
 	.table td {
 		padding: 8px;
 	}
+
+	.search {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.price-search {
+		flex-direction: column; /* Display price search inputs in a column on small screens */
+		margin-top: 10px;
+	}
+
+	/* Add responsive styles for select elements and options */
+	.search select,
+	.search select option {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
-/* Larger devices */
-@media (min-width: 992px) {
+/* Responsive Styles for Medium Devices */
+@media (max-width: 992px) {
+	.filter-container {
+		flex-direction: column;
+	}
+
+	.search {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
 	.house-table-container {
-		font-size: 18px;
 	}
 
 	.table th,
 	.table td {
-		padding: 12px;
 	}
 }
