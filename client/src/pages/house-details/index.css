@@ -2,13 +2,14 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0 5%;
 }
 
 .image-component {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	padding: 20px;
 	background-color: #f5f5f5;
 	border: 1px solid #ddd;
@@ -21,12 +22,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-right: 20px;
 }
 
 .slider-image {
 	max-width: 100%;
 	height: auto;
-	margin: 10px 0;
+	margin: 5px 0;
 }
 
 .slider-buttons {
@@ -78,16 +80,6 @@
 	border-color: #333;
 }
 
-.details {
-	text-align: center;
-	margin-top: 20px;
-}
-
-.details h2 {
-	font-size: 20px;
-	margin-bottom: 10px;
-}
-
 .price {
 	font-size: 18px;
 	font-weight: bold;
@@ -101,18 +93,26 @@
 .house-info {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	padding: 20px;
+	align-items: start;
+	justify-content: flex-start;
 	background-color: #f5f5f5;
 	border: 1px solid #ddd;
 	border-radius: 5px;
+	width: 40%;
+}
+.details {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	text-align: start;
 	margin-top: 20px;
+	margin-left: 20px;
 }
 
-.info-container {
-	width: 100%;
-	padding: 10px 0;
-	border-bottom: 1px solid #ddd;
+.details h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 .info-head {
@@ -158,10 +158,12 @@
 	.house-details {
 		display: flex;
 		flex-direction: column;
+		margin: 0;
 	}
 
 	.house-info {
 		padding: 10px;
+		width: 100%;
 	}
 
 	.info-container {
@@ -187,11 +189,17 @@
 		display: flex;
 		flex-direction: column;
 	}
+	.slider-container {
+		margin-right: 0;
+	}
 
 	.thumbnail {
 		width: 40px;
 		height: 40px;
-		margin: 5px;
+		margin: 3px 5px;
+	}
+	.details {
+		margin-left: 0;
 	}
 }
 

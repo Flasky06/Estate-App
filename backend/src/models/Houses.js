@@ -11,10 +11,12 @@ const HouseSchema = mongoose.Schema(
 			required: true,
 		},
 
-		imageUrl: {
-			type: String,
-			required: false,
-		},
+		images: [
+			{
+				type: String,
+				required: false,
+			},
+		],
 		location: {
 			type: String,
 			required: true,

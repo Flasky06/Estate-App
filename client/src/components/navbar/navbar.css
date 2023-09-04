@@ -1,10 +1,16 @@
 .navbar {
+	position: fixed; /* Fix the navigation bar at the top */
+	top: 0; /* Place it at the top of the viewport */
+	left: 5;
+	right: 5;
+	z-index: 1000; /* Set a high z-index to ensure it appears above other content */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 20px;
 	background-color: #333;
 	color: white;
+	width: 98%; /* Make it full width */
 }
 
 .nav-links {

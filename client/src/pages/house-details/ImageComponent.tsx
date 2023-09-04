@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HouseInfo from "./HouseInfo";
 import "./index.css"; // Import the corresponding CSS file
 
 const images = ["image1.jpg", "image2.jpg", "image3.jpg"]; // List of image filenames
@@ -48,12 +49,7 @@ const ImageComponent = () => {
 					))}
 				</div>
 			</div>
-			<div className="details">
-				<h2>2bdrm Apartment for Rent</h2>
-				<p className="price">Ksh 10000</p>
-				<p className="location">Freehold Nakuru</p>
-				<p className="contact">Contact: 0717299106</p>
-			</div>
+			<HouseInfo />
 		</div>
 	);
 };
