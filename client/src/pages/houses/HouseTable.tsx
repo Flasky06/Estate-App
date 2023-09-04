@@ -116,7 +116,7 @@ const HouseTable = () => {
 				<tbody>
 					{filteredData.map((data, index) => (
 						<tr key={index} className="table-row">
-							<td className="tableData">{data.size}</td>
+							<td className="tableData">{data.houseType}</td>
 							<td className="tableData">{data.price}</td>
 							<td className="tableData">{data.location}</td>
 							<td className="tableData">
