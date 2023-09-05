@@ -14,7 +14,7 @@ const HouseTable = () => {
 	useEffect(() => {
 		const fetchHouseData = async () => {
 			try {
-				const response = await axios.get("http://localhost:3500/house");
+				const response = await axios.get("http://localhost:3700/house");
 				setHouseData(response.data);
 			} catch (error) {
 				console.log(error);

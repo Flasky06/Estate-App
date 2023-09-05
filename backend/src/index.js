@@ -18,4 +18,4 @@ mongoose.connect(
 	"mongodb+srv://recipes:recipes@cluster0.vhpfkxk.mongodb.net/recipes?retryWrites=true&w=majority"
 );
 
-app.listen(3500, () => console.log("server started !!"));
+app.listen(3700, () => console.log("server started !!"));

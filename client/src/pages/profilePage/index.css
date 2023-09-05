@@ -1,9 +1,13 @@
+.profilePage {
+	margin-top: 90px;
+}
 .profile {
 	background-color: #f0f0f0;
 	padding: 20px;
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	max-width: 400px;
+
 	margin: 0 auto;
 	position: relative;
 }
