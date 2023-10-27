@@ -9,8 +9,6 @@ import router from "./router/index";
 
 const app = express();
 
-app.use(cors({ credentials: true }));
-
 app.use(compression());
 app.use(cookieParser());
 app.use(bodyParser.json());
@@ -21,8 +19,8 @@ app.use("/", router());
 const server = http.createServer(app);
 
 // STARTING EXPRESS SERVER
-server.listen(8080, () => {
-	console.log("Server running on http://localhost:8080");
+server.listen(8083, () => {
+	console.log("Server running on http://localhost:8087");
 });
 
 // CONNECTING TO MONGOOSE

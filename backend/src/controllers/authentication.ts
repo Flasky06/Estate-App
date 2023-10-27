@@ -1,7 +1,8 @@
 import express from "express";
-import { createUser, getUserByEmail } from "../db/users";
-import { authentication, random } from "../helpers/index";
-// LOGIN CONTROLLER
+
+import { UserModel, createUser } from "../db/users";
+import { authentication, random } from "../helpers";
+
 export const login = async (req: express.Request, res: express.Response) => {
 	try {
 		const { email, password } = req.body;
@@ -9,6 +10,7 @@ export const login = async (req: express.Request, res: express.Response) => {
 		if (!email || !password) {
 			return res.sendStatus(400);
 		}
+		const getUserByEmail = (email: string) => UserModel.findOne({ email });
 
 		const user = await getUserByEmail(email).select(
 			"+authentication.salt +authentication.password"
@@ -32,7 +34,7 @@ export const login = async (req: express.Request, res: express.Response) => {
 
 		await user.save();
 
-		res.cookie(user.authentication.sessionToken, "MY-AUTH", {
+		res.cookie("MY-AUTH", user.authentication.sessionToken, {
 			domain: "localhost",
 			path: "/",
 		});
@@ -44,7 +46,6 @@ export const login = async (req: express.Request, res: express.Response) => {
 	}
 };
 
-// REGISTER CONTROLLER
 export const register = async (req: express.Request, res: express.Response) => {
 	try {
 		const { email, password, username } = req.body;
@@ -52,6 +53,8 @@ export const register = async (req: express.Request, res: express.Response) => {
 		if (!email || !password || !username) {
 			return res.sendStatus(400);
 		}
+
+		const getUserByEmail = (email: string) => UserModel.findOne({ email });
 
 		const existingUser = await getUserByEmail(email);
 
@@ -61,14 +64,17 @@ export const register = async (req: express.Request, res: express.Response) => {
 
 		const salt = random();
 		const user = await createUser({
-			username,
 			email,
-			authentication: { salt, password: authentication(salt, password) },
+			username,
+			authentication: {
+				salt,
+				password: authentication(salt, password),
+			},
 		});
+
 		return res.status(200).json(user).end();
 	} catch (error) {
 		console.log(error);
-
 		return res.sendStatus(400);
 	}
 };
