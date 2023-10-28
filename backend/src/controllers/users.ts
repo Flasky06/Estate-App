@@ -2,6 +2,7 @@ import express from "express";
 
 import { deleteUserById, getUserById, UserModel } from "../db/users";
 
+// GET ALL USERS
 export const getAllUsers = async (
 	req: express.Request,
 	res: express.Response
@@ -18,6 +19,7 @@ export const getAllUsers = async (
 	}
 };
 
+// DELETE USER
 export const deleteUser = async (
 	req: express.Request,
 	res: express.Response
@@ -35,6 +37,7 @@ export const deleteUser = async (
 	}
 };
 
+// UPDATE USER
 export const updateUser = async (
 	req: express.Request,
 	res: express.Response
