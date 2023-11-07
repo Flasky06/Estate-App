@@ -1,0 +1,93 @@
+<template>
+	<div class="w-11/12 bg-green-400 m-auto">
+		<div class="bg-orange-400 flex items-center justify-center">
+			<div class="flex gap-4 overflow-x-auto">
+				<img
+					v-for="(image, index) in images"
+					:key="index"
+					class="w-[400px] h-auto object-cover"
+					:src="image.src"
+					:alt="image.alt"
+				/>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script setup>
+import { ref, onMounted } from "vue";
+
+const images = ref([
+	{
+		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		alt: "",
+	},
+	{
+		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		alt: "",
+	},
+	{
+		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		alt: "",
+	},
+	{
+		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		alt: "",
+	},
+	{
+		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		alt: "",
+	},
+	{
+		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		alt: "",
+	},
+	// Add more image objects here
+]);
+
+let currentIndex = ref(0);
+
+const imageWidth = 1000; // Width of each image in pixels
+
+const showImages = 4; // Number of images to display at a time
+
+const imageCarousel = document.querySelector(".image-carousel");
+
+const scrollLeft = () => {
+	if (currentIndex.value > 0) {
+		currentIndex.value--;
+		const scrollAmount = currentIndex.value * imageWidth;
+		imageCarousel.scroll({
+			left: scrollAmount,
+			behavior: "smooth",
+		});
+	}
+};
+
+const scrollRight = () => {
+	if (currentIndex.value < images.length - showImages) {
+		currentIndex.value++;
+		const scrollAmount = currentIndex.value * imageWidth;
+		imageCarousel.scroll({
+			left: scrollAmount,
+			behavior: "smooth",
+		});
+	}
+};
+
+onMounted(() => {
+	imageCarousel.scrollLeft = 0; // Initialize scroll position
+});
+</script>
+
+<style>
+.image-carousel {
+	display: flex;
+	overflow: hidden;
+	width: 100%;
+}
+
+.image-carousel img {
+	flex: 0 0 auto;
+}
+</style>
