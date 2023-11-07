@@ -1,11 +1,33 @@
 import express from "express";
+import { check } from "express-validator";
+import {
+	CreateHouseController,
+	GetHouseController,
+	UpdateHouseController,
+} from "../controllers/houseControllers.js";
 
 const router = express.Router();
+// CREATE  NEW HOUSE
+router.post(
+	"/create",
+	[
+		check("title", "title cannot be blank").isLength({ min: 3 }),
+		check("description", "Description cannot be empty").isLength({ min: 3 }),
+	],
+	CreateHouseController
+);
 
-// Get Single House
-router.get("/");
+// UPDATE HOUSE
+router.put(
+	"/update/:id",
+	[
+		check("title", "title cannot be blank").isLength({ min: 3 }),
+		check("description", "Description cannot be empty").isLength({ min: 3 }),
+	],
+	UpdateHouseController
+);
 
-// Get All Houses
-router.get("/all");
+// GET ALL HOUSES
+router.get("/all", GetHouseController);
 
 export default router;

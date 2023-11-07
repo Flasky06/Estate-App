@@ -3,7 +3,8 @@ import { validationResult } from "express-validator";
 
 // Create House Controller
 export const CreateHouseController = async (req, res) => {
-	const { title, description } = req.body;
+	const { title, description, size, rooms, propertyType, price, image } =
+		req.body;
 	try {
 		// Validate Input
 		const errors = validationResult(req);
@@ -13,7 +14,15 @@ export const CreateHouseController = async (req, res) => {
 		}
 
 		// Create a new House
-		const newHouse = new House({ title, description });
+		const newHouse = new House({
+			title,
+			description,
+			size,
+			rooms,
+			propertyType,
+			price,
+			image,
+		});
 
 		// Save the new house to the DB
 		await newHouse.save();
