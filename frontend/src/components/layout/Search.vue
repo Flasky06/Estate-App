@@ -1,8 +1,8 @@
 <template>
-	<div class="bg-inherit z-40">
+	<div class="bg-inherit z-40 bg:opacity-80">
 		<form
 			@submit.prevent="searchCars"
-			class="border border-white rounded-lg flex flex-col lg:mx-auto lg:grid lg:grid-cols-5 lg:w-9/12 lg:gap-4 lg:px-2 lg:py-4 w-full"
+			class="border py-4 border-white rounded-lg flex flex-col lg:mx-auto lg:grid lg:grid-cols-5 lg:w-9/12 lg:gap-4 lg:px-2 lg:py-4 w-full"
 		>
 			<!-- Property Type -->
 			<div class="mb-4 flex flex-col px-4">
