@@ -8,8 +8,15 @@
 			class="p-4 rounded-lg shadow-md my-2 mx-1 relative flex flex-col items-center justify-center space-y-3"
 		>
 			<h3 class="font-semibold text-lg">Discover {{ listing.type }}</h3>
-			<p class="">{{ listing.description }}</p>
-			<button class="bg-white rounded text-black px-2 py-1">Explore</button>
+			<p class="text-center">{{ listing.description }}</p>
+			<button
+				class="bg-white rounded text-black px-2 py-1 flex items-center cursor-pointer"
+			>
+				<span class="flex items-center text-lg">Explore</span>
+				<span class="material-symbols-outlined text-base">
+					arrow_right_alt
+				</span>
+			</button>
 		</div>
 	</section>
 </template>
