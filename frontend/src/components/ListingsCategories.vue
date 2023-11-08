@@ -5,7 +5,7 @@
 		<div
 			v-for="listing in listings"
 			:key="listing.title"
-			class="p-4 rounded-lg shadow-md my-2 mx-1 relative flex flex-col items-center justify-center space-y-3"
+			class="p-4 rounded-lg shadow-md my-2 mx-2 px-1 relative flex flex-col items-center justify-center space-y-3"
 		>
 			<h3 class="font-semibold text-lg">Discover {{ listing.type }}</h3>
 			<p class="text-center">{{ listing.description }}</p>
