@@ -2,7 +2,7 @@
 	<div class="bg-[#061158] top-0 sticky z-40">
 		<!-- Desktop Navbar -->
 		<div
-			class="px-4 sm:px-6 hidden lg:flex justify-between lg:items-center py-4 border-b-8 border-white"
+			class="px-4 sm:px-6 hidden lg:flex justify-between lg:items-center py-4 border-b-2 border-white"
 		>
 			<router-link class="text-white text-2xl" to="/"> Flasky </router-link>
 
@@ -57,9 +57,6 @@
 						v-if="mobileSidebarOpen"
 						class="bg-[#061158] text-white mt-4 p-4 rounded-lg opacity-80 h-screen"
 					>
-						<div class="text-end mt-4 text-2xl">
-							<button @click="toggleMobileSidebar" class="text-white">X</button>
-						</div>
 						<ul class="space-y-12 text-xl ml-4">
 							<li>
 								<router-link to="/" @click="toggleMobileSidebar">
@@ -67,23 +64,18 @@
 								>
 							</li>
 							<li>
-								<router-link to="/about" @click="toggleMobileSidebar">
-									About</router-link
+								<router-link to="/buy" @click="toggleMobileSidebar">
+									Buy</router-link
 								>
 							</li>
 							<li>
-								<router-link to="/services" @click="toggleMobileSidebar">
-									Services</router-link
+								<router-link to="/rent" @click="toggleMobileSidebar">
+									Rent</router-link
 								>
 							</li>
 							<li>
-								<router-link to="/portfolio" @click="toggleMobileSidebar">
-									Portfolio</router-link
-								>
-							</li>
-							<li>
-								<router-link to="/testimonials" @click="toggleMobileSidebar">
-									Testimonials</router-link
+								<router-link to="/contact" @click="toggleMobileSidebar">
+									Contact</router-link
 								>
 							</li>
 						</ul>

@@ -9,7 +9,7 @@
 				<label class="text-xl text-white">LOOKING FOR</label>
 				<select
 					v-model="type"
-					class="border rounded bg-white px-1 py-2 lg:px-2 lg:py-3"
+					class="border rounded bg-white px-1 py-2 md:py-3 md:text-lg lg:px-2 lg:py-3"
 				>
 					<option value="">Property Type</option>
 					<option value="location1">Apartment</option>
@@ -23,7 +23,7 @@
 				<label class="text-xl text-white">LOCATION</label>
 				<select
 					v-model="location"
-					class="border rounded bg-white px-1 py-2 lg:px-2 lg:py-3"
+					class="border rounded bg-white px-1 py-2 md:py-3 md:text-lg lg:px-2 lg:py-3"
 				>
 					<option value="">Any Location</option>
 					<option value="location2">Nairobi</option>
@@ -34,10 +34,10 @@
 
 			<!-- Property size Filter -->
 			<div class="mb-4 flex flex-col px-4">
-				<label class="text-xl text-white">PROPERTY SIZE</label>
+				<label class="text-xl text-white md:text-lg">PROPERTY SIZE</label>
 				<select
 					v-model="size"
-					class="border rounded w-full bg-white px-1 py-2 lg:px-2 lg:py-3"
+					class="border rounded w-full bg-white px-1 py-2 md:py-3 lg:px-2 lg:py-3"
 				>
 					<option value="">Apartment</option>
 					<option value="small">Studio</option>
@@ -53,7 +53,7 @@
 				<label class="text-xl text-white">YOUR BUDGET</label>
 				<input
 					v-model="price"
-					class="px-3 py-2 border rounded bg-white text-lg"
+					class="px-3 py-2 border rounded bg-white text-lg md:px-4"
 					type="number"
 					min="0"
 					step="10"
@@ -62,7 +62,7 @@
 
 			<button
 				type="submit"
-				class="text-white rounded bg-blue-600 mx-4 py-2 font-bold lg:my-5 lg:mx-4"
+				class="text-white rounded bg-blue-600 mx-4 my-2 py-2 font-bold md:py-3 lg:my-5 lg:mx-4"
 			>
 				SEARCH
 			</button>

@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center h-screen"
+		class="flex flex-col items-center lg:flex-row md:justify-center md:items-center h-screen"
 	>
 		<div
 			class="relative overflow-hidden w-full z-0 h-screen bg-contain"
@@ -10,7 +10,7 @@
 				background-position: center;
 			"
 		></div>
-		<div class="absolute max-md:bottom-8 w-11/12 lg:z-0">
+		<div class="absolute max-sm:bottom-8 w-11/12 lg:z-0">
 			<Search />
 		</div>
 	</section>
