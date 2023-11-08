@@ -1,12 +1,20 @@
 <template>
-	<div class="w-full px-2 bg-green-400 mt-40 mx-auto">
-		<div class="bg-orange-400 flex items-center justify-center">
+	<div class="w-full px-2 my-28 mx-auto">
+		<h1 class="text-center font-bold text-3xl my-8">
+			Discovered Featured Properties
+		</h1>
+
+		<div class="flex items-center justify-center">
 			<div class="flex gap-2 overflow-x-auto">
 				<div class="w-[600px]" v-for="image in images">
-					<div class="relative w-40 h-auto flex justify-center">
-						<img class="w-full h-auto" :src="image.src" :alt="image.alt" />
+					<div class="relative rounded w-40 h-auto flex justify-center">
+						<img
+							class="rounded w-full h-auto"
+							:src="image.src"
+							:alt="image.alt"
+						/>
 						<span class="absolute bottom-0 text-white font-semibold">{{
-							image.alt
+							image.title
 						}}</span>
 					</div>
 				</div>
