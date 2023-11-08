@@ -10,7 +10,7 @@
 			<h3 class="font-semibold text-lg">Discover {{ listing.type }}</h3>
 			<p class="text-center">{{ listing.description }}</p>
 			<button
-				class="bg-white rounded text-black px-2 py-1 flex items-center cursor-pointer"
+				class="bg-blue-600 rounded text-white px-2 py-1 flex items-center cursor-pointer"
 			>
 				<span class="flex items-center text-lg">Explore</span>
 				<span class="material-symbols-outlined text-base">
