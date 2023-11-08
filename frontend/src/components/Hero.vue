@@ -10,7 +10,7 @@
 				background-position: center;
 			"
 		></div>
-		<div class="absolute bottom-1 w-11/12 lg:z-0 bg-green-300">
+		<div class="absolute max-md:bottom-1 w-11/12 lg:z-0">
 			<Search />
 		</div>
 	</section>
