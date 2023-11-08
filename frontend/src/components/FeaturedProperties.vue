@@ -33,27 +33,27 @@ const images = ref([
 		title: "Apartment",
 	},
 	{
-		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		src: "https://cdn.pixabay.com/photo/2017/08/10/19/40/buildings-2626957_640.jpg",
 		alt: "image 2",
 		title: "Condo",
 	},
 	{
-		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		src: "https://cdn.pixabay.com/photo/2016/10/16/10/29/office-space-1744801_640.jpg",
 		alt: "image 3",
 		title: "Office spaces",
 	},
 	{
-		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		src: "https://cdn.pixabay.com/photo/2016/11/29/04/57/architecture-1867426_640.jpg",
 		alt: "image 4",
-		title: "Bangalo",
+		title: "Bungalow",
 	},
 	{
-		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		src: "https://cdn.pixabay.com/photo/2017/03/30/00/24/villa-2186906_640.jpg",
 		alt: "image 5",
 		title: "Villa",
 	},
 	{
-		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
+		src: "https://cdn.pixabay.com/photo/2019/03/08/20/14/kitchen-living-room-4043091_640.jpg",
 		alt: "image 6",
 		title: "Studio",
 	},
