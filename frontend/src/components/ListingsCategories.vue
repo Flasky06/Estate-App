@@ -7,7 +7,11 @@
 			:key="listing.title"
 			class="p-4 rounded-lg shadow-md my-2 mx-2 px-1 relative flex flex-col items-center justify-center space-y-3"
 		>
-			<h3 class="font-semibold text-lg">Discover {{ listing.type }}</h3>
+			<h3
+				class="font-semibold text-lg underline underline-offset-4 decoration-inherit decoration-solid decoration-1"
+			>
+				Discover {{ listing.type }}
+			</h3>
 			<p class="text-center">{{ listing.description }}</p>
 			<button
 				class="bg-blue-600 rounded text-white px-2 py-1 flex items-center cursor-pointer"
