@@ -1,11 +1,14 @@
 <template>
-	<div class="w-11/12 bg-green-400 m-auto">
+	<div class="w-full px-2 bg-green-400 mt-40 mx-auto">
 		<div class="bg-orange-400 flex items-center justify-center">
-			<div class="flex gap-8 overflow-x-auto">
+			<div class="flex gap-2 overflow-x-auto">
 				<div class="w-[600px]" v-for="image in images">
-					<img :src="image.src" :alt="image.alt" />
-					<span>{{ image.src }}</span>
-					<p>{{ image.alt }}</p>
+					<div class="relative w-40 h-auto flex justify-center">
+						<img class="w-full h-auto" :src="image.src" :alt="image.alt" />
+						<span class="absolute bottom-0 text-white font-semibold">{{
+							image.alt
+						}}</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -23,27 +26,27 @@ const images = ref([
 	},
 	{
 		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
-		alt: "image 1",
+		alt: "image 2",
 		title: "Condo",
 	},
 	{
 		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
-		alt: "image 1",
+		alt: "image 3",
 		title: "Office spaces",
 	},
 	{
 		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
-		alt: "image 1",
-		title: "Bangalow",
+		alt: "image 4",
+		title: "Bangalo",
 	},
 	{
 		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
-		alt: "image 1",
+		alt: "image 5",
 		title: "Villa",
 	},
 	{
 		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
-		alt: "image 1",
+		alt: "image 6",
 		title: "Studio",
 	},
 	// Add more image objects here

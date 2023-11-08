@@ -1,11 +1,7 @@
 <template>
 	<section class="">
 		<h1 class="text-center font-bold text-3xl my-8">Explore Our Listings</h1>
-		<h3 class="text-thin text-center">
-			We pride ourselves in offering a dynamic, lavish and affordable housing
-			options for people looking for residential or investment properties. Let
-			us help you find your dream property!
-		</h3>
+
 		<div
 			class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8 lg:px-8"
 		>
