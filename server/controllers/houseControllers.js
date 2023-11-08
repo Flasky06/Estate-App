@@ -3,8 +3,17 @@ import { validationResult } from "express-validator";
 
 // Create House Controller
 export const CreateHouseController = async (req, res) => {
-	const { title, description, size, rooms, propertyType, price, image } =
-		req.body;
+	const {
+		title,
+		description,
+		rooms,
+		type,
+		category,
+		rent,
+		price,
+		location,
+		image,
+	} = req.body;
 	try {
 		// Validate Input
 		const errors = validationResult(req);
@@ -17,10 +26,12 @@ export const CreateHouseController = async (req, res) => {
 		const newHouse = new House({
 			title,
 			description,
-			size,
 			rooms,
-			propertyType,
+			type,
+			category,
+			rent,
 			price,
+			location,
 			image,
 		});
 
@@ -65,11 +76,22 @@ export const GetHouseController = async (req, res) => {
 	} catch (error) {}
 };
 
-// Update House Details
+// UPDATE HOUSE DETAILS
 export const UpdateHouseController = async (req, res) => {
 	try {
 		// Extract House ID and the fields to update from the request body
-		const { id, title, description } = req.body;
+		const {
+			id,
+			title,
+			description,
+			rooms,
+			type,
+			category,
+			rent,
+			price,
+			location,
+			image,
+		} = req.body;
 
 		// Validate Input
 		const errors = validationResult(req);

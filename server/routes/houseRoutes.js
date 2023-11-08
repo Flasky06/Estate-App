@@ -11,6 +11,8 @@ const router = express.Router();
 router.post(
 	"/create",
 	[
+		// Update House Details
+
 		check("title", "title cannot be blank").isLength({ min: 3 }),
 		check("description", "Description cannot be empty").isLength({ min: 3 }),
 	],

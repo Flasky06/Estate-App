@@ -1,17 +1,10 @@
 <template>
 	<div class="bg-[#061158] top-0 sticky z-40">
-		<div
-			class="hidden lg:flex lg:flex-row lg:justify-center lg:py-3 lg:space-x-24 bg-[#1E1E1E] text-white"
-		>
-			<div>Infospace@gmail.com</div>
-			<div>+254 712 345 678</div>
-			<div>Gibcon House 4th Floor Nakuru</div>
-		</div>
 		<!-- Desktop Navbar -->
 		<div
 			class="px-4 sm:px-6 hidden lg:flex justify-between lg:items-center py-4 border-b-8 border-white"
 		>
-			<router-link class="text-white text-2xl" to="/"> Namlah </router-link>
+			<router-link class="text-white text-2xl" to="/"> Flasky </router-link>
 
 			<ul class="space-x-16 lg:flex">
 				<li><router-link to="/" class="text-white">Home</router-link></li>
@@ -20,7 +13,7 @@
 						to="/about"
 						@click="toggleMobileSidebar"
 						class="text-white"
-						>About</router-link
+						>Buy</router-link
 					>
 				</li>
 				<li>
@@ -29,7 +22,7 @@
 						@click="toggleMobileSidebar"
 						class="text-white"
 					>
-						Services
+						Rent
 					</router-link>
 				</li>
 				<li>
@@ -37,15 +30,7 @@
 						to="/portfolio"
 						@click="toggleMobileSidebar"
 						class="text-white"
-						>Portfolio</router-link
-					>
-				</li>
-				<li>
-					<router-link
-						to="/testimonials"
-						@click="toggleMobileSidebar"
-						class="text-white"
-						>Testimonials</router-link
+						>contact</router-link
 					>
 				</li>
 			</ul>

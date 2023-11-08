@@ -1,12 +1,13 @@
 <template>
-	<div class="h-screen">
+	<Hero />
+	<div class="">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio fugiat
 		corporis debitis, similique soluta eum? Impedit reprehenderit omnis itaque,
 		numquam laboriosam beatae quis earum aut? Unde eius eum quae.
 	</div>
+	<FeaturedProperties />
 	<div>Upcoming</div>
 
-	<FeaturedProperties />
 	<ListingsCategories />
 	<div>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam
@@ -16,5 +17,6 @@
 </template>
 <script setup>
 import FeaturedProperties from "../components/FeaturedProperties.vue";
+import Hero from "../components/Hero.vue";
 import ListingsCategories from "../components/ListingsCategories.vue";
 </script>
