@@ -6,16 +6,19 @@
 
 		<div class="flex items-center justify-center">
 			<div class="flex gap-2 overflow-x-auto">
-				<div class="w-[600px]" v-for="image in images">
-					<div class="relative rounded w-40 h-auto flex justify-center">
+				<div class="" v-for="image in images">
+					<div
+						class="relative rounded w-40 h-32 flex justify-center md:w-80 md:h-64"
+					>
 						<img
-							class="rounded w-full h-auto"
+							class="rounded w-full h-full"
 							:src="image.src"
 							:alt="image.alt"
 						/>
-						<span class="absolute bottom-0 text-white font-semibold">{{
-							image.title
-						}}</span>
+						<span
+							class="absolute bottom-0 flex justify-center items-center text-white font-semibold bg-opacity-60 bg-black transition-opacity opacity-80 w-full h-1/5 md:text-xl"
+							>{{ image.title }}</span
+						>
 					</div>
 				</div>
 			</div>
