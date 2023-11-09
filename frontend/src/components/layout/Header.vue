@@ -43,13 +43,13 @@
 			<div class="max-w-7xl lg:px-8 py-4">
 				<div class="flex items-center justify-between">
 					<router-link to="/">
-						<span class="text-white text-xl ml-4"> Namlah</span>
+						<span class="text-white text-xl ml-4"> Flasky</span>
 					</router-link>
 					<button
 						@click="toggleMobileSidebar"
 						class="text-white mr-2 text-2xl lg:hidden"
 					>
-						☰
+						{{ mobileSidebarOpen ? "✕" : "☰" }}
 					</button>
 				</div>
 				<div name="slide " class="w-9/12 ml-auto left-0">
@@ -89,7 +89,7 @@
 <script setup>
 import { ref } from "vue";
 
-const mobileSidebarOpen = ref(false);
+const mobileSidebarOpen = ref(true);
 
 const toggleMobileSidebar = () => {
 	mobileSidebarOpen.value = !mobileSidebarOpen.value;
