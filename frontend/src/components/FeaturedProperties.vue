@@ -22,12 +22,12 @@
 
 					<div class="flex space-x-2 items-center">
 						<span class="material-symbols-outlined text-4xl"> bed </span>
-						<span class="text-xl">{{ property.size }}</span>
+						<span class="text-xl items-center">{{ property.size }}</span>
 					</div>
-					<div class="flex space-x-2 items-center">
-						<span class="text-xl">ksh</span>
-						<span class="text-lg">{{ property.price }}</span>
-					</div>
+				</div>
+				<div class="flex space-x-2 items-center">
+					<span class="text-xl">ksh</span>
+					<span class="text-lg">{{ property.price }}</span>
 				</div>
 			</div>
 		</div>
@@ -43,6 +43,7 @@ const Properties = ref([
 		title: "Gibcon Apartment",
 		category: "For sale",
 		size: "2 Bedroom ",
+		bathroom: "2",
 		price: "2000000",
 	},
 	{
@@ -51,6 +52,7 @@ const Properties = ref([
 		title: "Sigma Apartment",
 		category: "For sale",
 		size: "3 Bedroom",
+		bathroom: "2",
 		price: "2000000",
 	},
 	{
@@ -59,6 +61,7 @@ const Properties = ref([
 		title: "Alphine House",
 		category: "For sale",
 		size: "Studio",
+		bathroom: "1",
 		price: "20000",
 	},
 	{
@@ -67,6 +70,7 @@ const Properties = ref([
 		title: "Green Park",
 		category: "For rent",
 		size: "1 Bedroom",
+		bathroom: "2",
 		price: "42000",
 	},
 	{
@@ -75,6 +79,7 @@ const Properties = ref([
 		title: "Rodridge Apartment",
 		category: "For rent",
 		size: "2 Bedroom",
+		bathroom: "1",
 		price: "55000",
 	},
 	{
@@ -83,6 +88,7 @@ const Properties = ref([
 		title: "Kelani Estate",
 		category: "For sale",
 		size: "3 Bedroom ",
+		bathroom: "3",
 		price: "4500000",
 	},
 	// Add more image objects here
