@@ -25,7 +25,7 @@
 						<span class="text-xl">{{ property.size }}</span>
 					</div>
 					<div class="flex space-x-2 items-center">
-						<span>ksh</span>
+						<span class="text-xl">ksh</span>
 						<span class="text-lg">{{ property.price }}</span>
 					</div>
 				</div>
