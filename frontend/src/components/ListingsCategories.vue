@@ -1,5 +1,5 @@
 <template>
-	<section class="">
+	<section class="lg:w-11/12 lg:mx-auto">
 		<h1 class="text-center font-bold text-3xl my-8 lg:my-16">
 			Discover What You Are Looking For
 		</h1>
@@ -7,7 +7,7 @@
 			<div
 				v-for="listing in listings"
 				:key="listing.title"
-				class="p-4 rounded-lg shadow-md my-2 mx-2 px-1 relative flex flex-col items-center justify-center space-y-3 md:px-8 md:py-4 md:mx-8 md:my-4 z-40 lg:shadow-lg"
+				class="p-4 rounded-lg shadow-2xl my-2 mx-2 px-1 relative flex flex-col items-center justify-center space-y-3 md:px-8 md:py-4 md:mx-8 md:my-4 z-20 lg:shadow-3xl"
 			>
 				<h3
 					class="font-semibold text-lg underline underline-offset-4 decoration-inherit decoration-solid decoration-1"
