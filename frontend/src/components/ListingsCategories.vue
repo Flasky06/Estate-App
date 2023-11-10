@@ -1,6 +1,6 @@
 <template>
 	<section class="">
-		<h1 class="text-center font-bold text-3xl my-8">
+		<h1 class="text-center font-bold text-3xl my-8 lg:my-16">
 			Discover What You Are Looking For
 		</h1>
 		<div class="flex flex-col lg:grid lg:grid-cols-3">
