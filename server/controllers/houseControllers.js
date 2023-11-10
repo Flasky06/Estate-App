@@ -63,17 +63,24 @@ export const GetHousesController = async (req, res) => {
 		res.status(500).json({ message: "Server error" });
 	}
 };
-
+//
 export const GetHouseController = async (req, res) => {
 	try {
-		// Retrieve single house
-		const house = await House.findOne();
+		// Retrieve a single house by some criteria (e.g., by ID)
+		const house = await House.findOne({ _id: req.params.houseId }); // Adjust the criteria based on your requirements
 
-		// Check if House exists
+		// Check if the house exists
 		if (!house) {
-			return res.status(404).json({ message: "house not found" });
+			return res.status(404).json({ message: "House not found" });
 		}
-	} catch (error) {}
+
+		// If the house is found, return it in the response
+		return res.status(200).json({ house });
+	} catch (error) {
+		// Handle errors appropriately, e.g., log the error and send an error response
+		console.error("Error while fetching house:", error);
+		return res.status(500).json({ message: "Internal server error" });
+	}
 };
 
 // UPDATE HOUSE DETAILS

@@ -89,7 +89,7 @@
 <script setup>
 import { ref } from "vue";
 
-const mobileSidebarOpen = ref(true);
+const mobileSidebarOpen = ref(false);
 
 const toggleMobileSidebar = () => {
 	mobileSidebarOpen.value = !mobileSidebarOpen.value;

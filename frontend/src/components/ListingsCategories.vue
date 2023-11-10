@@ -1,6 +1,8 @@
 <template>
 	<section class="">
-		<h1 class="text-center font-bold text-3xl my-8">Explore Our Listings</h1>
+		<h1 class="text-center font-bold text-3xl my-8">
+			Discover What You Are Looking For
+		</h1>
 		<div class="flex flex-col lg:grid lg:grid-cols-3">
 			<div
 				v-for="listing in listings"
