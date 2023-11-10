@@ -18,7 +18,7 @@
 				</div>
 
 				<div class="flex flex-col px-2">
-					<h3 class="font-light text-2xl">{{ property.title }}</h3>
+					<h3 class="font-light text-xl">{{ property.title }}</h3>
 
 					<div class="flex space-x-2 items-center">
 						<span class="material-symbols-outlined text-4xl"> bed </span>
