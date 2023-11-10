@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-[#061158] top-0 sticky z-40">
+	<div class="bg-[#061158] top-0 sticky z-[100]">
 		<!-- Desktop Navbar -->
 		<div
 			class="px-4 sm:px-6 hidden lg:flex justify-between lg:items-center py-4 border-b-2 border-white"
