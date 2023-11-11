@@ -21,8 +21,12 @@
 				<li>Properties for sale</li>
 			</ul>
 			<div class="flex space-x-2 justify-center my-2">
-				<span class="text-lg">Privacy & cookies</span>
-				<span class="text-lg">Terms and conditions</span>
+				<span class="text-lg underline underline-offset-4"
+					>Terms and conditions</span
+				>
+				<span class="text-lg underline underline-offset-4"
+					>Privacy & cookies</span
+				>
 			</div>
 		</div>
 		<span class="flex justify-center my-4">
