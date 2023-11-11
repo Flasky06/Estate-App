@@ -10,7 +10,7 @@
 				<li><router-link to="/" class="text-white">Home</router-link></li>
 				<li>
 					<router-link
-						to="/about"
+						to="/properties"
 						@click="toggleMobileSidebar"
 						class="text-white"
 						>Properties</router-link
@@ -19,7 +19,7 @@
 
 				<li>
 					<router-link
-						to="/portfolio"
+						to="/profile"
 						@click="toggleMobileSidebar"
 						class="text-white"
 						>Profile</router-link
@@ -27,7 +27,7 @@
 				</li>
 				<li>
 					<router-link
-						to="/services"
+						to="/logout"
 						@click="toggleMobileSidebar"
 						class="text-white"
 					>
@@ -65,17 +65,17 @@
 								>
 							</div>
 							<div class="font-bold text-xl">
-								<router-link to="/buy" @click="toggleMobileSidebar">
+								<router-link to="/rentals" @click="toggleMobileSidebar">
 									<span>For rent</span>
 								</router-link>
 							</div>
 							<div class="font-bold text-xl">
-								<router-link to="/buy" @click="toggleMobileSidebar">
+								<router-link to="/sale" @click="toggleMobileSidebar">
 									<span>For sale</span>
 								</router-link>
 							</div>
 							<div class="font-bold text-xl">
-								<router-link to="/rent" @click="toggleMobileSidebar">
+								<router-link to="/profile" @click="toggleMobileSidebar">
 									Profile</router-link
 								>
 							</div>
@@ -86,7 +86,7 @@
 								<li class="font-light">Privacy and cookies</li>
 							</ul>
 							<div>
-								<router-link to="/rent" @click="toggleMobileSidebar">
+								<router-link to="/logout" @click="toggleMobileSidebar">
 									Logout</router-link
 								>
 							</div>
