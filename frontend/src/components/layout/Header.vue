@@ -59,22 +59,22 @@
 						class="bg-[#061158] text-white mt-4 p-4 rounded-lg opacity-80 h-screen"
 					>
 						<div class="space-y-12 text-xl ml-4">
-							<div class="font-bold text-xl">
+							<div class="font-bold text-lg">
 								<router-link to="/" @click="toggleMobileSidebar">
 									Home</router-link
 								>
 							</div>
-							<div class="font-bold text-xl">
+							<div class="font-bold text-lg">
 								<router-link to="/rentals" @click="toggleMobileSidebar">
 									<span>For rent</span>
 								</router-link>
 							</div>
-							<div class="font-bold text-xl">
+							<div class="font-bold text-lg">
 								<router-link to="/sale" @click="toggleMobileSidebar">
 									<span>For sale</span>
 								</router-link>
 							</div>
-							<div class="font-bold text-xl">
+							<div class="font-bold text-lg">
 								<router-link to="/profile" @click="toggleMobileSidebar">
 									Profile</router-link
 								>
