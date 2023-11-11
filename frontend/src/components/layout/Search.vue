@@ -12,10 +12,10 @@
 					class="border rounded bg-white px-1 py-2 md:py-3 md:text-lg lg:px-2 lg:py-3 lg:space-y-4"
 				>
 					<option value="">Property Type</option>
-					<option value="location1">Apartment</option>
-					<option value="location2">Villa</option>
-					<option value="location2">Condo</option>
-					<option value="location2">Bungalow</option>
+					<option value="type1">Apartment</option>
+					<option value="type1">Villa</option>
+					<option value="type1">Condo</option>
+					<option value="type1">Homes</option>
 				</select>
 			</div>
 			<!-- Location Filter -->
