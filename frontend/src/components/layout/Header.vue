@@ -92,11 +92,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="font-bold text-xl">
-						<router-link to="/contact" @click="toggleMobileSidebar">
-							Logout</router-link
-						>
-					</div>
 				</div>
 			</div>
 		</div>
