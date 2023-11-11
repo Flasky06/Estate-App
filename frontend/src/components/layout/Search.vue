@@ -56,7 +56,7 @@
 				<input
 					v-model="price"
 					class="px-3 py-2 border rounded bg-white text-lg md:px-4"
-					placeholder="KSH"
+					placeholder="ksh"
 					type="number"
 					min="0"
 					step="10"
