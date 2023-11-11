@@ -11,10 +11,10 @@
 					<img
 						:src="property.src"
 						:alt="property.title"
-						class="w-full h-full rounded"
+						class="w-full h-full rounded object-fill"
 					/>
 					<span
-						class="absolute top-1 right-1 bg-opacity-60 bg-black transition-opacity opacity-80 text-white text-lg px-4 py-1"
+						class="absolute top-1 right-1 rounded bg-opacity-60 bg-black transition-opacity opacity-80 text-white text-lg px-4 py-1"
 						>{{ property.category }}</span
 					>
 				</div>

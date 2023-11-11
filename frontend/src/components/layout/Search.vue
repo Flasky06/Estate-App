@@ -1,15 +1,15 @@
 <template>
-	<div class="bg-inherit z-40 bg:opacity-80">
+	<div class="z-40">
 		<form
 			@submit.prevent="searchCars"
-			class="border py-4 border-white rounded-lg flex flex-col lg:mx-auto lg:grid lg:grid-cols-5 lg:w-9/12 lg:gap-4 lg:px-2 lg:py-4 w-full"
+			class="bg-opacity-60 bg-black transition-opacity opacity-80 border py-4 rounded-lg flex flex-col lg:mx-auto lg:grid lg:grid-cols-5 lg:w-9/12 lg:gap-4 lg:px-2 lg:py-4 w-full"
 		>
 			<!-- Property Type -->
 			<div class="mb-4 flex flex-col px-4">
 				<label class="text-xl text-white">LOOKING FOR</label>
 				<select
 					v-model="type"
-					class="border rounded bg-white px-1 py-2 md:py-3 md:text-lg lg:px-2 lg:py-3"
+					class="border rounded bg-white px-1 py-2 md:py-3 md:text-lg lg:px-2 lg:py-3 lg:space-y-4"
 				>
 					<option value="">Property Type</option>
 					<option value="location1">Apartment</option>
@@ -45,6 +45,8 @@
 					<option value="large">2 Bedroom</option>
 					<option value="large">3 Bedroom</option>
 					<option value="large">4 Bedroom</option>
+					<option value="large">5 Bedroom</option>
+					<option value="large">6 Bedroom</option>
 				</select>
 			</div>
 
@@ -54,6 +56,7 @@
 				<input
 					v-model="price"
 					class="px-3 py-2 border rounded bg-white text-lg md:px-4"
+					placeholder="KSH"
 					type="number"
 					min="0"
 					step="10"
@@ -62,7 +65,7 @@
 
 			<button
 				type="submit"
-				class="text-white rounded bg-blue-600 mx-4 my-2 py-2 font-bold md:py-3 lg:my-5 lg:mx-4"
+				class="text-white rounded bg-blue-600 mx-4 my-2 py-2 font-bold md:py-3 lg:my-5 lg:mx-4 lg:text-xl"
 			>
 				SEARCH
 			</button>
