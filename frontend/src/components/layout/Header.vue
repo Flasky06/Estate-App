@@ -81,9 +81,9 @@
 							</div>
 							<ul class="space-y-4">
 								<div class="font-bold text-xl my-5">Settings and legal</div>
-								<li>About flasky.co.m</li>
-								<li>Terms and conditions</li>
-								<li>Privacy and cookies</li>
+								<li class="font-light">About flasky.com</li>
+								<li class="font-light">Terms and conditions</li>
+								<li class="font-light">Privacy and cookies</li>
 							</ul>
 							<div>
 								<router-link to="/rent" @click="toggleMobileSidebar">
@@ -106,7 +106,7 @@
 <script setup>
 import { ref } from "vue";
 
-const mobileSidebarOpen = ref(true);
+const mobileSidebarOpen = ref(false);
 
 const toggleMobileSidebar = () => {
 	mobileSidebarOpen.value = !mobileSidebarOpen.value;
