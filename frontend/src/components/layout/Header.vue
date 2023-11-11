@@ -13,7 +13,16 @@
 						to="/about"
 						@click="toggleMobileSidebar"
 						class="text-white"
-						>Buy</router-link
+						>Properties</router-link
+					>
+				</li>
+
+				<li>
+					<router-link
+						to="/portfolio"
+						@click="toggleMobileSidebar"
+						class="text-white"
+						>Profile</router-link
 					>
 				</li>
 				<li>
@@ -22,16 +31,8 @@
 						@click="toggleMobileSidebar"
 						class="text-white"
 					>
-						Rent
+						Logout
 					</router-link>
-				</li>
-				<li>
-					<router-link
-						to="/portfolio"
-						@click="toggleMobileSidebar"
-						class="text-white"
-						>contact</router-link
-					>
 				</li>
 			</ul>
 		</div>
@@ -65,17 +66,17 @@
 							</li>
 							<li>
 								<router-link to="/buy" @click="toggleMobileSidebar">
-									Buy</router-link
+									Properties</router-link
 								>
 							</li>
 							<li>
 								<router-link to="/rent" @click="toggleMobileSidebar">
-									Rent</router-link
+									Profile</router-link
 								>
 							</li>
 							<li>
 								<router-link to="/contact" @click="toggleMobileSidebar">
-									Contact</router-link
+									Logout</router-link
 								>
 							</li>
 						</ul>

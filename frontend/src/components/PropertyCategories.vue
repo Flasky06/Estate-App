@@ -35,12 +35,12 @@ const images = ref([
 	{
 		src: "https://splendorholdings.co.ke/wp-content/uploads/2023/05/Splendor-Holdings-Leshwa-Web-Version18-1024x683.jpg",
 		alt: "image 1",
-		title: "Apartment",
+		title: "Apartments",
 	},
 	{
 		src: "https://cdn.pixabay.com/photo/2017/08/10/19/40/buildings-2626957_640.jpg",
 		alt: "image 2",
-		title: "Condo",
+		title: "Condos",
 	},
 	{
 		src: "https://cdn.pixabay.com/photo/2016/10/16/10/29/office-space-1744801_640.jpg",
@@ -55,7 +55,7 @@ const images = ref([
 	{
 		src: "https://cdn.pixabay.com/photo/2017/03/30/00/24/villa-2186906_640.jpg",
 		alt: "image 5",
-		title: "Villa",
+		title: "Villas",
 	},
 	{
 		src: "https://cdn.pixabay.com/photo/2019/03/08/20/14/kitchen-living-room-4043091_640.jpg",

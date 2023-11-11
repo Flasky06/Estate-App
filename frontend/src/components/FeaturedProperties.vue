@@ -7,7 +7,7 @@
 			class="flex flex-col md:grid md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-4 lg:w-11/12 lg:mx-auto"
 		>
 			<div class="flex flex-col w-full px-4" v-for="property in Properties">
-				<div class="w-full h-60 rounded relative">
+				<div class="w-full h-56 rounded relative">
 					<img
 						:src="property.src"
 						:alt="property.title"
