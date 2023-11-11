@@ -1,7 +1,7 @@
 <template>
 	<div class="bottom-0 bg-[#061158] text-white">
 		<div class="flex justify-center items-center py-4">
-			<button class="bg-white text-[#061158] py-2 px-4 text-lg">
+			<button class="bg-white text-[#061158] py-2 px-4 text-lg cursor-pointer">
 				List your property
 			</button>
 		</div>
