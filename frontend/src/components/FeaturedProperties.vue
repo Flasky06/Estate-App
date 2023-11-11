@@ -20,16 +20,16 @@
 				</div>
 
 				<div class="flex flex-col px-2">
-					<h3 class="font-light text-xl">{{ property.title }}</h3>
+					<h3 class="font-light text-lg">{{ property.title }}</h3>
 
 					<div class="flex space-x-2 items-center">
-						<span class="material-symbols-outlined text-4xl"> bed </span>
-						<span class="text-xl items-center">{{ property.size }}</span>
+						<span class="material-symbols-outlined text-3xl"> bed </span>
+						<span class="text-lg items-center">{{ property.size }}</span>
 					</div>
 				</div>
 				<div class="flex space-x-2 items-center">
 					<span class="text-xl">ksh</span>
-					<span class="text-lg">{{ property.price }}</span>
+					<span class="text-base">{{ property.price }}</span>
 				</div>
 			</div>
 		</div>

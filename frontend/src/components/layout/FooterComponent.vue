@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-[#061158] text-white">
+	<div class="bottom-0 bg-[#061158] text-white">
 		<div class="flex justify-center items-center py-4">
 			<button class="bg-white text-[#061158] py-2 px-4 text-lg">
 				List your property
@@ -29,7 +29,7 @@
 				>
 			</div>
 		</div>
-		<span class="flex justify-center my-4">
+		<span class="flex justify-center py-4">
 			@ copyright 2023 flasky.com. All rights reserved
 		</span>
 	</div>
