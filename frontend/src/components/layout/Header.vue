@@ -66,8 +66,13 @@
 							</li>
 							<li>
 								<router-link to="/buy" @click="toggleMobileSidebar">
-									Properties</router-link
-								>
+									<span>For rent</span>
+								</router-link>
+							</li>
+							<li>
+								<router-link to="/buy" @click="toggleMobileSidebar">
+									<span>For sale</span>
+								</router-link>
 							</li>
 							<li>
 								<router-link to="/rent" @click="toggleMobileSidebar">
@@ -90,7 +95,7 @@
 <script setup>
 import { ref } from "vue";
 
-const mobileSidebarOpen = ref(false);
+const mobileSidebarOpen = ref(true);
 
 const toggleMobileSidebar = () => {
 	mobileSidebarOpen.value = !mobileSidebarOpen.value;
