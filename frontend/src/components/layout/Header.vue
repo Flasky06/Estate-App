@@ -58,33 +58,44 @@
 						v-if="mobileSidebarOpen"
 						class="bg-[#061158] text-white mt-4 p-4 rounded-lg opacity-80 h-screen"
 					>
-						<ul class="space-y-12 text-xl ml-4">
-							<li>
+						<div class="space-y-12 text-xl ml-4">
+							<div class="font-bold text-xl">
 								<router-link to="/" @click="toggleMobileSidebar">
 									Home</router-link
 								>
-							</li>
-							<li>
+							</div>
+							<div class="font-bold text-xl">
 								<router-link to="/buy" @click="toggleMobileSidebar">
 									<span>For rent</span>
 								</router-link>
-							</li>
-							<li>
+							</div>
+							<div class="font-bold text-xl">
 								<router-link to="/buy" @click="toggleMobileSidebar">
 									<span>For sale</span>
 								</router-link>
-							</li>
-							<li>
+							</div>
+							<div class="font-bold text-xl">
 								<router-link to="/rent" @click="toggleMobileSidebar">
 									Profile</router-link
 								>
-							</li>
-							<li>
-								<router-link to="/contact" @click="toggleMobileSidebar">
+							</div>
+							<ul class="space-y-4">
+								<div class="font-bold text-xl my-5">Settings and legal</div>
+								<li>About flasky.co.m</li>
+								<li>Terms and conditions</li>
+								<li>Privacy and cookies</li>
+							</ul>
+							<div>
+								<router-link to="/rent" @click="toggleMobileSidebar">
 									Logout</router-link
 								>
-							</li>
-						</ul>
+							</div>
+						</div>
+					</div>
+					<div class="font-bold text-xl">
+						<router-link to="/contact" @click="toggleMobileSidebar">
+							Logout</router-link
+						>
 					</div>
 				</div>
 			</div>
