@@ -1,5 +1,8 @@
 <template>
 	<div class="mt-" v-for="detail in details">
+		<div class="h-[400px] w-full rounded">
+			<img class="h-full w-full rounded-lg" :src="detail.src" alt="" />
+		</div>
 		<div class="flex flex-col">
 			<div class="flex flex-col">
 				<span>{{ detail.title }}</span>
@@ -16,11 +19,9 @@
 				<span>{{ detail.category }}</span>
 			</div>
 		</div>
-		<ImageSlider />
 	</div>
 </template>
 <script setup>
-import ImageSlider from "../components/ImageSlider.vue";
 import { ref } from "vue";
 
 const details = ref([
