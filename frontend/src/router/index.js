@@ -28,6 +28,12 @@ const router = createRouter({
 
 			component: () => import("../views/PropertyDetailsView.vue"),
 		},
+		{
+			path: "/properties",
+			name: "property",
+
+			component: () => import("../views/PropertyView.vue"),
+		},
 	],
 });
 
