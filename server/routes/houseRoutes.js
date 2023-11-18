@@ -3,6 +3,7 @@ import { check } from "express-validator";
 import {
 	CreateHouseController,
 	GetHouseController,
+	GetHousesController,
 	UpdateHouseController,
 } from "../controllers/houseControllers.js";
 
@@ -30,6 +31,8 @@ router.put(
 );
 
 // GET ALL HOUSES
-router.get("/all", GetHouseController);
+router.get("/all", GetHousesController);
+
+router.get("/:id", GetHouseController);
 
 export default router;

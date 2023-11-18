@@ -67,3 +67,49 @@ export const LoginController = async (req, res) => {
 		res.status(500).json({ errors: [{ msg: "Server error" }] });
 	}
 };
+
+export const GetUserController = async (req, res) => {
+	try {
+		// Get the user ID from the request parameters
+
+		const userId = req.params.id;
+
+		// check if the provided ID is valid
+		if (!userId) {
+			return res.status(400).json({ errors: [{ msg: "Invalid user ID" }] });
+		}
+
+		// Find the user by ID in the database
+		const user = await User.findById(userId);
+
+		// check if user exists
+		if (!user) {
+			return res.status(404).json({ error: [{ msg: "Invalid user ID" }] });
+		}
+
+		// If the user exists ,send the user data in the response
+		res.json({ user });
+	} catch (error) {
+		console.error("Error:", error);
+		res.status(500).json({ errors: [{ msg: "Server error" }] });
+	}
+};
+
+// GET ALL USERS
+export const GetAllUsersController = async (req, res) => {
+	try {
+		// Retrieve all users from the database
+		const users = await User.find();
+
+		// Check if there are no users
+		if (!users || users.length === 0) {
+			return res.status(404).json({ message: "No users found" });
+		}
+
+		// If users are found, send JSON response
+		res.json({ users });
+	} catch (error) {
+		console.error("Error:", error);
+		res.status(500).json({ errors: [{ msg: "Server error" }] });
+	}
+};

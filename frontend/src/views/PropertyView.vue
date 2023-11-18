@@ -1,37 +1,43 @@
 <template>
-	<div
-		class="flex flex-col md:grid md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-4 lg:w-11/12 lg:mx-auto"
-	>
-		<div class="flex flex-col w-full px-4" v-for="property in Properties">
-			<div class="w-full h-56 rounded relative">
-				<img
-					:src="property.src"
-					:alt="property.title"
-					class="w-full h-full rounded object-fill"
-				/>
-				<span
-					class="absolute top-1 right-1 rounded bg-opacity-60 bg-black transition-opacity opacity-80 text-white text-lg px-4 py-1"
-					>{{ property.category }}</span
-				>
-			</div>
-
-			<div class="flex flex-col px-2">
-				<h3 class="font-light text-lg">{{ property.title }}</h3>
-
-				<div class="flex space-x-2 items-center">
-					<span class="material-symbols-outlined text-3xl"> bed </span>
-					<span class="text-lg items-center">{{ property.size }}</span>
+	<div class="flex flex-col mt-4">
+		<div
+			class="flex flex-col md:grid md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-4 lg:w-11/12 lg:mx-auto"
+		>
+			<div class="flex flex-col w-full px-4" v-for="property in Properties">
+				<div class="w-full h-56 rounded relative">
+					<img
+						:src="property.src"
+						:alt="property.title"
+						class="w-full h-full rounded object-fill"
+					/>
+					<span
+						class="absolute top-1 right-1 rounded bg-opacity-60 bg-black transition-opacity opacity-80 text-white text-lg px-4 py-1"
+						>{{ property.category }}</span
+					>
 				</div>
-			</div>
-			<div class="flex space-x-2 items-center">
-				<span class="text-xl">ksh</span>
-				<span class="text-base">{{ property.price }}</span>
+				<div class="flex flex-col px-2">
+					<h3 class="font-light text-lg">{{ property.title }}</h3>
+
+					<div class="flex space-x-2 items-center">
+						<span class="material-symbols-outlined text-3xl"> bed </span>
+						<span class="text-lg items-center">{{ property.size }}</span>
+					</div>
+				</div>
+				<div class="flex space-x-2 items-center">
+					<span class="text-xl">ksh</span>
+					<span class="text-base">{{ property.price }}</span>
+				</div>
 			</div>
 		</div>
 	</div>
 </template>
 <script setup>
 import { ref } from "vue";
+import Search from "../components/layout/Search.vue";
+import { useHousesStore } from "../stores/house.store";
+
+const houses = useHousesStore;
+console.log(houses);
 
 const Properties = ref([
 	{

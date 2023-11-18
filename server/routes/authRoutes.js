@@ -2,6 +2,8 @@ import express from "express";
 
 import { check } from "express-validator";
 import {
+	GetAllUsersController,
+	GetUserController,
 	LoginController,
 	SignupController,
 } from "../controllers/authControllers.js";
@@ -25,6 +27,9 @@ router.post(
 router.post("/login", LoginController);
 
 // GET USER ROUTE
-router.get("/id");
+router.get("/:id", GetUserController);
+
+// GET USERS ROUTE
+router.get("/users", GetAllUsersController);
 
 export default router;

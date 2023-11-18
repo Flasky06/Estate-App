@@ -1,7 +1,7 @@
 <template>
 	<Header />
 	<RouterView />
-	<FooterComponent />
+	<!-- <FooterComponent /> -->
 </template>
 <script setup>
 import { RouterView } from "vue-router";

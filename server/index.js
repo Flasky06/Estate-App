@@ -1,4 +1,5 @@
 import express from "express";
+import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import authRoutes from "./routes/authRoutes.js";
 import houseRoutes from "./routes/houseRoutes.js";
@@ -6,6 +7,9 @@ import houseRoutes from "./routes/houseRoutes.js";
 // Middleware to parse JSON requests
 const app = express();
 app.use(express.json());
+app.use(bodyParser.json());
+
+// Use the cors middleware
 
 // Define a route for the root URL
 app.get("/", (req, res) => {
@@ -14,7 +18,7 @@ app.get("/", (req, res) => {
 
 // Routes
 app.use("/auth", authRoutes);
-app.use("/house", houseRoutes);
+app.use("/houses", houseRoutes);
 
 // Connect to Mongo DB
 const connect = async () => {
@@ -48,7 +52,7 @@ const connect = async () => {
 };
 
 // Start the server and listen on port 8500
-const port = 8500;
+const port = 8600;
 app.listen(port, () => {
 	connect();
 	console.log(`Server is now running on port ${port}`);
