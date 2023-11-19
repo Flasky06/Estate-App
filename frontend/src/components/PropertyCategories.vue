@@ -1,7 +1,7 @@
 <template>
 	<section class="lg:w-11/12 lg:mx-auto">
 		<div class="w-full px-2 my-28 mx-auto">
-			<h1 class="text-center font-bold text-3xl my-8">
+			<h1 class="text-center font-bold text-3xl my-4">
 				Explore Our Properties
 			</h1>
 

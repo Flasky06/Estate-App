@@ -94,7 +94,7 @@ export const GetHouseController = async (req, res) => {
 // UPDATE HOUSE DETAILS
 export const UpdateHouseController = async (req, res) => {
 	try {
-		// Extract House ID and the fields to update from the request body
+		//   The fields to be updated from the request body
 		const {
 			id,
 			title,

@@ -26,7 +26,7 @@ const router = createRouter({
 			path: "/property",
 			name: "property",
 
-			component: () => import("../views/PropertyDetailsView.vue"),
+			component: () => import("../views/PropertyView.vue"),
 		},
 		{
 			path: "/properties",

@@ -1,39 +1,25 @@
 <template>
-	<div class="bg-[#061158] top-0 sticky z-[100]">
+	<div class="bg-white top-0 border-b sticky z-[100]">
 		<!-- Desktop Navbar -->
+		<div class="h-8 bg-black"></div>
 		<div
-			class="px-4 sm:px-6 hidden lg:flex justify-between lg:items-center py-4 border-b-2 border-white"
+			class="px-4 sm:px-6 hidden lg:flex justify-between mx-4 lg:items-center py-4 border-b-2 border-white"
 		>
-			<router-link class="text-white text-2xl" to="/"> Flasky </router-link>
+			<router-link class="text-2xl" to="/"> Flasky </router-link>
+			<Search />
 
 			<ul class="space-x-16 lg:flex">
-				<li><router-link to="/" class="text-white">Home</router-link></li>
-				<li>
-					<router-link
-						to="/properties"
-						@click="toggleMobileSidebar"
-						class="text-white"
-						>Properties</router-link
+				<router-link to="/logout" @click="toggleMobileSidebar" class=""
+					><button
+						class="border px-4 py-2 text-xl rounded-full flex items-center justify-center space-x-2"
 					>
-				</li>
+						<span class="material-symbols-outlined text-3xl"> menu </span>
 
-				<li>
-					<router-link
-						to="/profile"
-						@click="toggleMobileSidebar"
-						class="text-white"
-						>Profile</router-link
-					>
-				</li>
-				<li>
-					<router-link
-						to="/logout"
-						@click="toggleMobileSidebar"
-						class="text-white"
-					>
-						Logout
-					</router-link>
-				</li>
+						<span class="material-symbols-outlined text-5xl">
+							account_circle
+						</span>
+					</button>
+				</router-link>
 			</ul>
 		</div>
 
@@ -100,6 +86,7 @@
 
 <script setup>
 import { ref } from "vue";
+import Search from "./Search.vue";
 
 const mobileSidebarOpen = ref(false);
 
