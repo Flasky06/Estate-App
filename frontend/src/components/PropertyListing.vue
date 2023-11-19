@@ -1,10 +1,10 @@
 <template>
 	<section class="lg:mt-16">
 		<div
-			class="grid grid-cols-2 gap-1 px-1 md:gap-2 lg:grid-cols-4 lg:gap-4 lg:w-11/12 lg:mx-auto"
+			class="grid grid-cols-2 gap-1 px-1 md:gap-2 lg:grid-cols-4 lg:gap-4 lg:max-w-7xl mx-auto lg:mx-auto"
 		>
 			<div class="flex flex-col w-full lg:px-4" v-for="property in Properties">
-				<div class="w-full h-40 lg:h-56 rounded relative">
+				<div class="w-full h-40 lg:h-56 my-3 rounded relative">
 					<img
 						:src="property.src"
 						:alt="property.title"

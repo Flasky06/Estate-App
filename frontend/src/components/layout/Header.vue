@@ -1,7 +1,7 @@
 <template>
 	<div class="bg-white top-0 border-b sticky z-[100]">
 		<!-- Desktop Navbar -->
-		<div class="h-8 bg-black"></div>
+		<div class="h-4 bg-primary"></div>
 		<div
 			class="px-4 sm:px-6 hidden lg:flex justify-between mx-4 lg:items-center py-4 border-b-2 border-white"
 		>
@@ -25,7 +25,7 @@
 
 		<!-- Mobile Navbar (sidebar) -->
 		<div
-			class="lg:hidden fixed w-full h-20 z-[100] shadow-xl transition-transform ease-in-out duration-300 bg-[#061158]"
+			class="lg:hidden fixed w-full h-20 z-[100] shadow-xl transition-transform ease-in-out duration-300 bg-primary"
 		>
 			<div class="max-w-7xl lg:px-8 py-4">
 				<div class="flex items-center justify-between">

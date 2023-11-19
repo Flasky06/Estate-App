@@ -1,5 +1,5 @@
 <template>
-	<section class="lg:w-11/12 lg:mx-auto">
+	<section class="lg:max-w-7xl lg:mx-auto">
 		<h1 class="text-center font-bold text-3xl my-8 lg:my-16">
 			Discover What You Are Looking For
 		</h1>

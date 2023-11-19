@@ -1,8 +1,6 @@
 <template>
 	<PropertyCategories />
 	<ListingsCategories />
-	<h2 class="my-8">Welcome, {{ userStore.user }}</h2>
-
 	<FeaturedProperties />
 	<PropertyListing />
 </template>

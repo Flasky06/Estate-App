@@ -1,7 +1,7 @@
 <template>
 	<div class="z-40">
 		<form
-			@submit.prevent="searchCars"
+			@submit.prevent="searchHouses"
 			class="bg-opacity-60 transition-opacity opacity-80 border py-4 rounded-full flex flex-col justify-center items-center lg:mx-auto lg:grid lg:grid-cols-5 lg:w-9/12 lg:gap-2 lg:px-4 lg:py-2 w-full lg:my-8"
 		>
 			<!-- Property Type -->

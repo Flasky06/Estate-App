@@ -23,16 +23,10 @@ const router = createRouter({
 			component: () => import("../views/RegisterView.vue"),
 		},
 		{
-			path: "/property",
-			name: "property",
+			path: "/search",
+			name: "search",
 
-			component: () => import("../views/PropertyView.vue"),
-		},
-		{
-			path: "/properties",
-			name: "property",
-
-			component: () => import("../views/PropertyView.vue"),
+			component: () => import("../views/SearchView.vue"),
 		},
 	],
 });
