@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import cors from "cors";
 import mongoose from "mongoose";
 import authRoutes from "./routes/authRoutes.js";
 import houseRoutes from "./routes/houseRoutes.js";
@@ -10,6 +11,15 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 // Use the cors middleware
+const corsOptions = {
+	origin: "*",
+	methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+	optionsSuccessStatus: 204,
+	credentials: true,
+	allowedHeaders: "Content-Type,Authorization",
+};
+
+app.use(cors(corsOptions));
 
 // Define a route for the root URL
 app.get("/", (req, res) => {

@@ -1,23 +1,29 @@
 import { defineStore } from "pinia";
 
-export const useHousesStore = defineStore("house", () => ({
+export const useHouseStore = defineStore("house", () => ({
 	state: () => ({
-		properties: [],
+		houses: [
+			{
+				id: 1,
+				type: "For Rent",
+				description:
+					"Explore a wide range of rental and lease properties, available in all sizes and locations, perfectly tailored to your budget. Discover your ideal home today!",
+			},
+			{
+				id: 2,
+				type: "For Sale",
+				description:
+					"We offer a variety of properties for sale, available in all sizes and locations, all within your budget. Find your dream home today!",
+			},
+			{
+				id: 3,
+				type: "Office Spaces",
+				description:
+					"Discover contemporary office spaces available in various locations.",
+			},
+		],
 	}),
-
-	actions: {
-		// Action to fetch houses
-		async fetchHouses() {
-			try {
-				const response = await fetch("http://localhost:8085/houses");
-				const data = await response.json();
-
-				// Update the state with the fetched houses
-				this.properties = data;
-			} catch (error) {
-				// Handle the error (e.g., log it or show a notification)
-				console.error("Error fetching houses:", error);
-			}
-		},
+	getters: {
+		getTasks: (state) => state.houses,
 	},
 }));

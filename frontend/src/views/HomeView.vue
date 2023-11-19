@@ -9,7 +9,4 @@ import ListingsCategories from "../components/ListingsCategories.vue";
 import PropertyCategories from "../components/PropertyCategories.vue";
 import FeaturedProperties from "../components/FeaturedProperties.vue";
 import PropertyListing from "../components/PropertyListing.vue";
-
-import { useUserStore } from "../stores/users.store";
-const userStore = useUserStore;
 </script>

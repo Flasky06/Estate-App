@@ -9,7 +9,7 @@
 			<Search />
 
 			<ul class="space-x-16 lg:flex">
-				<router-link to="/logout" @click="toggleMobileSidebar" class=""
+				<router-link to="/login" @click="toggleMobileSidebar" class=""
 					><button
 						class="border px-4 py-2 text-xl rounded-full flex items-center justify-center space-x-2"
 					>
