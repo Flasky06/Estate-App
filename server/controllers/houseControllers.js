@@ -3,8 +3,17 @@ import { validationResult } from "express-validator";
 
 // Create House Controller
 export const CreateHouseController = async (req, res) => {
-	const { title, description, rooms, type, category, price, location, image } =
-		req.body;
+	const {
+		title,
+		description,
+		rooms,
+		type,
+		category,
+		price,
+		county,
+		location,
+		image,
+	} = req.body;
 	try {
 		// Validate Input
 		const errors = validationResult(req);
@@ -20,8 +29,8 @@ export const CreateHouseController = async (req, res) => {
 			rooms,
 			type,
 			category,
-			rent,
 			price,
+			county,
 			location,
 			image,
 		});
@@ -127,4 +136,23 @@ export const DeleteHouseController = async (req, res) => {
 		const house = await House.findByIdAndDelete(req.params.id);
 		res.status(200).json(user);
 	} catch (error) {}
+};
+
+// GET HOUSE BY CATEGORY
+export const GetHouseByCategories = async (req, res) => {
+	try {
+		const category = req.params.category;
+
+		// Validate that the provided category is one of the allowed enum values
+		if (!["apartment", "home", "villa"].includes(category)) {
+			return res.status(400).json({ error: "Invalid category" });
+		}
+
+		const houses = await House.find({ category }); // No need for ObjectId casting
+
+		res.status(200).json({ houses });
+	} catch (error) {
+		console.error("Error", error);
+		res.status(500).json({ error: "Internal server error" });
+	}
 };

@@ -12,11 +12,12 @@ const HouseSchema = new mongoose.Schema(
 		type: { type: String, enum: ["sale", "rent"], required: true },
 		category: {
 			type: String,
-			enum: ["apartment", "villa", "home", "beach house", "mansion"],
+			enum: ["apartment", "home", "villa"],
 			required: true,
 		},
 		price: { type: Number },
 		// only three counties have the project,how do i model the contituency model
+		county: { type: String },
 		location: {
 			type: String,
 			required: true,

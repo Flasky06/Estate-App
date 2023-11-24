@@ -2,6 +2,7 @@ import express from "express";
 import { check } from "express-validator";
 import {
 	CreateHouseController,
+	GetHouseByCategories,
 	GetHouseController,
 	GetHousesController,
 	UpdateHouseController,
@@ -35,4 +36,6 @@ router.get("/all", GetHousesController);
 
 router.get("/:id", GetHouseController);
 
+// GET HOUSE BY CATEGORY
+router.get("/:category", GetHouseByCategories);
 export default router;

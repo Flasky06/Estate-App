@@ -6,7 +6,7 @@ export const useHouseStore = defineStore("houses", () => {
 	const loading = ref(true);
 
 	const fetchData = async () => {
-		const url = "http://localhost:8700/houses/all";
+		const url = "http://localhost:8600/houses/all";
 
 		try {
 			const response = await fetch(url);
