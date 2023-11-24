@@ -1,7 +1,6 @@
 <template>
 	<div class="bg-white top-0 border-b sticky z-[100]">
 		<!-- Desktop Navbar -->
-		<div class="h-4 bg-primary"></div>
 		<div
 			class="px-4 sm:px-6 hidden lg:flex justify-between mx-4 lg:items-center py-4 border-b-2 border-white"
 		>

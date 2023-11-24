@@ -62,7 +62,7 @@ const connect = async () => {
 };
 
 // Start the server and listen on port 8500
-const port = 8600;
+const port = 8700;
 app.listen(port, () => {
 	connect();
 	console.log(`Server is now running on port ${port}`);

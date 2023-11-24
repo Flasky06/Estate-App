@@ -1,42 +1,58 @@
 <template>
-	<div class="z-40">
+	<div class="z-40 max-w-7xl mx-auto">
 		<form
 			@submit.prevent="searchHouses"
-			class="bg-opacity-60 transition-opacity opacity-80 border py-4 rounded-full flex flex-col justify-center items-center lg:mx-auto lg:grid lg:grid-cols-5 lg:w-9/12 lg:gap-2 lg:px-4 lg:py-2 w-full lg:my-8"
+			class="bg-opacity-60 transition-opacity opacity-80 border py-4 rounded-full flex flex-col justify-center items-center lg:grid lg:grid-cols-5 lg:gap-2 lg:px-4 lg:justify-start lg:py-2 w-full lg:my-8"
 		>
 			<!-- Property Type -->
-			<div class="flex flex-col px-4">
+			<div class="flex flex-col px-4 relative items-center justify-center">
+				<label
+					for="propertyType"
+					class="block text-xl font-medium text-gray-700 absolute"
+					>Looking for</label
+				>
+
 				<select
 					v-model="type"
-					class="border rounded-full bg-white px-1 py-2 md:py-3 md:text-lg lg:px-2 lg:py-3 lg:space-y-4"
+					class="border rounded-full w-full bg-white px-1 py-2 md:py-3 md:text-lg lg:px-2 lg:py-3 lg:space-y-4"
 				>
-					<option value="">Looking For</option>
 					<option value="type1">Apartment</option>
-					<option value="type1">Villa</option>
-					<option value="type1">Condo</option>
-					<option value="type1">Homes</option>
+					<option value="type2">Villa</option>
+					<option value="type3">Condo</option>
+					<option value="type4">Homes</option>
 				</select>
 			</div>
+
 			<!-- Location Filter -->
-			<div class="flex flex-col px-4">
+			<div
+				class="flex flex-col px-2 w-full relative items-center justify-center"
+			>
+				<label
+					for="propertyType"
+					class="block text-xl font-medium text-gray-700 absolute"
+					>desired Location</label
+				>
 				<select
 					v-model="location"
-					class="border rounded-full bg-white px-1 py-2 md:py-3 md:text-lg lg:px-2 lg:py-3"
+					class="border rounded-full w-full bg-white px-1 py-2 md:py-3 md:text-lg lg:px-2 lg:py-3"
 				>
-					<option value="">Any Location</option>
-					<option value="location2">Nairobi</option>
+					<option value="location3">Nairobi</option>
 					<option value="location2">Mombasa</option>
 					<option value="location1">Nakuru</option>
 				</select>
 			</div>
 
 			<!-- Property size Filter -->
-			<div class="flex flex-col px-4">
+			<div class="flex flex-col px-2 relative items-center justify-center">
+				<label
+					for="propertyType"
+					class="block text-xl font-medium text-gray-700 absolute"
+					>House Type</label
+				>
 				<select
 					v-model="size"
 					class="border rounded-full w-full bg-white px-1 py-2 md:py-3 lg:px-2 lg:py-3"
 				>
-					<option value="">Apartment</option>
 					<option value="small">Studio</option>
 					<option value="medium">1 Bedroom</option>
 					<option value="large">2 Bedroom</option>
@@ -52,7 +68,7 @@
 				<input
 					v-model="price"
 					class="px-3 py-2 border rounded-full bg-white text-lg md:px-4"
-					placeholder="ksh"
+					placeholder="max price(ksh)"
 					type="number"
 					min="0"
 					step="10"
@@ -69,21 +85,6 @@
 		</form>
 	</div>
 </template>
-<script setup>
-import { ref } from "vue";
+<script setup></script>
 
-const type = ref("");
-const location = ref("");
-const size = ref("");
-const price = ref(null);
-
-const searchCars = () => {
-	// Handle the search functionality here, including the selected options.
-};
-</script>
-
-<style scoped>
-.hero {
-	/* Add your Hero section styles here */
-}
-</style>
+<style scoped></style>

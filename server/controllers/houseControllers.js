@@ -3,17 +3,8 @@ import { validationResult } from "express-validator";
 
 // Create House Controller
 export const CreateHouseController = async (req, res) => {
-	const {
-		title,
-		description,
-		rooms,
-		type,
-		category,
-		rent,
-		price,
-		location,
-		image,
-	} = req.body;
+	const { title, description, rooms, type, category, price, location, image } =
+		req.body;
 	try {
 		// Validate Input
 		const errors = validationResult(req);

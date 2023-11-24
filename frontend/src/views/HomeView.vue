@@ -1,12 +1,12 @@
 <template>
-	<PropertyCategories />
-	<ListingsCategories />
-	<FeaturedProperties />
 	<PropertyListing />
 </template>
+
 <script setup>
-import ListingsCategories from "../components/ListingsCategories.vue";
-import PropertyCategories from "../components/PropertyCategories.vue";
-import FeaturedProperties from "../components/FeaturedProperties.vue";
 import PropertyListing from "../components/PropertyListing.vue";
+import { useHouseStore } from "../stores/HouseStore";
+const houseStore = useHouseStore();
+
+console.log(houseStore);
 </script>
+<style></style>

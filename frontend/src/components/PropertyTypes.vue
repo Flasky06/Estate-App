@@ -32,21 +32,20 @@
 	</section>
 </template>
 <script setup>
-import { onMounted, ref } from "vue";
+import { useHouseStore, fetchHouses } from "../stores/HouseStore";
+import { onMounted } from "vue";
 
-const properties = ref([]);
+const houses = useHouseStore();
 
-onMounted(async () => {
-	try {
-		const response = await fetch("http://localhost:8600/houses/all");
-		const data = await response.json();
+onMounted(() => {
+	console.log("Component mounted");
+	houses.fetchData();
 
-		console.log("Data:", data); // Log the fetched data
-
-		properties.value = data;
-	} catch (error) {
-		console.error("Error fetching houses:", error);
-	}
+	fetchHouses();
+	console.log("Initial state:", houses.houses);
 });
+
+console.log("Initial state:", houses.houses);
+console.log("Component show");
 </script>
 <style></style>
