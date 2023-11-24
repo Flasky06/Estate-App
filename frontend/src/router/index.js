@@ -28,6 +28,12 @@ const router = createRouter({
 
 			component: () => import("../views/SearchView.vue"),
 		},
+		{
+			path: "/details",
+			name: "details",
+
+			component: () => import("../views/PropertyDetailsView.vue"),
+		},
 	],
 });
 
