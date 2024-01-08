@@ -4,8 +4,10 @@ import living from "../../assets/image/living.jpeg";
 
 function FeaturedProperty() {
   return (
-    <div className="mb-10">
-      <h3 className="font-bold text-2xl w-full  mb-4">Featured Properties</h3>
+    <div className="mt-36 py-10 mx-auto max-w-6xl">
+      <h3 className="font-bold text-2xl w-full text-slate-900  mb-4">
+        Featured Properties
+      </h3>
       <div className="flex space-x-2">
         <PropertyCard
           image={living}

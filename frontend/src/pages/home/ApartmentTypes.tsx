@@ -9,10 +9,10 @@ import ApartmentCard from "../../components/ApartmentCard.tsx";
 
 function ApartmentTypes() {
   return (
-    <div className="flex flex-col mb-8">
+    <div className="flex flex-col mb-8 mx-auto max-w-6xl ">
       <h3 className="font-bold text-2xl w-full  mb-4">Apartment Types</h3>
       <div>
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-4 gap-2 bg-white">
           <div className="col-span-2 h-[16rem]">
             <ApartmentCard title="Apartment" image={living} />
           </div>

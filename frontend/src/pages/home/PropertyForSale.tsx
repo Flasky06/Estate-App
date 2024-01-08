@@ -2,11 +2,11 @@ import React from "react";
 import PropertyCard from "../../components/PropertyCard.tsx";
 import living from "../../assets/image/living.jpeg";
 
-function PropertyForRent() {
+function PropertyForSale() {
   return (
     <div className="m-10 mx-auto max-w-6xl">
       <h3 className="font-bold text-2xl w-full text-slate-900  mb-4">
-        Properties For Rent
+        Properties For Sale
       </h3>
       <div className="grid grid-cols-4 gap-4">
         <PropertyCard
@@ -102,4 +102,4 @@ function PropertyForRent() {
   );
 }
 
-export default PropertyForRent;
+export default PropertyForSale;
