@@ -4,7 +4,7 @@ import living from "../../assets/image/living.jpeg";
 
 function PropertyForRent() {
   return (
-    <div className="m-10 mx-auto max-w-6xl">
+    <div className="m-20 mx-auto max-w-6xl">
       <h3 className="font-bold text-2xl w-full text-slate-900  mb-4">
         Properties For Rent
       </h3>
