@@ -4,6 +4,7 @@ import ApartmentTypes from "./ApartmentTypes.tsx";
 import PropertyForRent from "./PropertyForRent.tsx";
 import Header from "../../layout/Header.tsx";
 import PropertyForSale from "./PropertyForSale.tsx";
+import Footer from "../../layout/Footer.tsx";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <ApartmentTypes />
       <PropertyForRent />
       <PropertyForSale />
+      <Footer />
     </div>
   );
 }

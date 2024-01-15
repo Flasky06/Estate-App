@@ -30,10 +30,10 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             <span className="absolute top-1 right-2 bg-slate-800 px-1 py-[1px] text-xs font-bold text-white">
               {state}
             </span>
-            <span className="absolute bottom-0 py-1 px-2 font-semibold w-full  text-white bg-black z-20 opacity-60">
+            <div className="absolute text-sm bottom-0 py-1 px-2  w-full  text-white bg-black z-20 opacity-60">
               <span className="text-xs">ksh </span>
               {price}
-            </span>
+            </div>
           </div>
           <div className="px-2 space-y-1">
             <h5 className="font-semibold mt-1">{title}</h5>

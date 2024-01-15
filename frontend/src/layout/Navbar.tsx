@@ -24,13 +24,13 @@ const Navbar: React.FC = () => {
           {isPropertiesDropdownOpen && (
             <div className="absolute right-0 w-32 py-2 mt-2 bg-white rounded-md shadow-xl z-10">
               <a
-                href="/sale"
+                href="/for-sale"
                 className="block px-4 py-2 text-sm text-slate-800 hover:bg-gray-100"
               >
                 For Sale
               </a>
               <a
-                href="/rent"
+                href="/for-rent"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
                 For Rent

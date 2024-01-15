@@ -3,10 +3,8 @@ import ImageSlider from "./ImageSlider.tsx";
 
 function PropertyDetails() {
   return (
-    <div>
-      <div className="flex flex-col max-w-7xl mx-auto">
-        <ImageSlider />
-      </div>
+    <div className="flex flex-col max-w-7xl pt-10  mx-auto mb-40">
+      <ImageSlider />
     </div>
   );
 }

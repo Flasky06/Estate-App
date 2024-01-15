@@ -97,7 +97,7 @@ const Signup: React.FC<SignupProps> = () => {
             Signup
           </button>
           <p className="inline-block align-baseline  text-sm text-blue hover:text-blue-darker">
-            Already have an account?{" "}
+            Already have an account?
             <Link to="/login" className="text-blue-500">
               Login
             </Link>

@@ -77,7 +77,6 @@ const SearchComponent: React.FC = () => {
             <option value="Commercial">Commercial</option>
             <option value="Villa">Villa</option>
             <option value="Apartment">Apartment</option>
-            {/* Add other property types here */}
           </select>
         </div>
 
