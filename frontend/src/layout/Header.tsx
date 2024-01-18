@@ -9,7 +9,7 @@ const Header: React.FC = () => {
 
   return (
     <nav className="  w-full py-4 bg-white fixed z-20 top-0">
-      <div className="flex items-center">
+      <div className="flex items-center px-2">
         <div className="mr-12">logo</div>
         <div className="container  flex items-center justify-end ">
           <div className="px-4 cursor-pointer">Home</div>

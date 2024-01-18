@@ -5,11 +5,13 @@ import PropertyForRent from "./PropertyForRent.tsx";
 import PropertyForSale from "./PropertyForSale.tsx";
 import Footer from "../../layout/Footer.tsx";
 import Hero from "../../layout/Hero.tsx";
+import FeaturedLocations from "./FeaturedLocations.tsx";
 
 function Home() {
   return (
     <div className="bg-[#f7f7f7]">
       <Hero />
+      <FeaturedLocations />
       <FeaturedProperty />
       <ApartmentTypes />
       <PropertyForRent />
