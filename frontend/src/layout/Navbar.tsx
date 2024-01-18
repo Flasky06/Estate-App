@@ -8,10 +8,10 @@ const Navbar: React.FC = () => {
   const [isMenuDropdownOpen, setIsMenuDropdownOpen] = useState(false);
 
   return (
-    <nav className="  p-3">
-      <div className="container mx-auto flex items-center justify-center ">
+    <nav className="  p-3 bg-green-600">
+      <div className="mr-12">logo</div>
+      <div className="container  flex items-center justify-end ">
         <div className="px-4 cursor-pointer">Home</div>
-
         <div className="relative px-4">
           <button
             onClick={() =>
@@ -38,14 +38,13 @@ const Navbar: React.FC = () => {
             </div>
           )}
         </div>
-
         <div className="relative px-4">
           <button
             onClick={() => setIsMenuDropdownOpen(!isMenuDropdownOpen)}
             className="cursor-pointer flex space-x-1 items-center"
           >
-            <MdMenu className="text-3xl" />
-            <CgProfile className="text-4xl" />
+            <MdMenu className="text-xl" />
+            <CgProfile className="text-2xl" />
           </button>
           {isMenuDropdownOpen && (
             <div className="absolute right-0 w-32 py-2 mt-2 bg-white rounded-md shadow-xl z-10">
@@ -69,6 +68,11 @@ const Navbar: React.FC = () => {
               </a>
             </div>
           )}
+        </div>
+        <div>
+          <button className="bg-slate-800 text-white py-2 px-3 text-sm font-bold rounded">
+            Add Listing
+          </button>
         </div>
       </div>
     </nav>

@@ -15,6 +15,7 @@ import { ReactComponent as Garage } from "../../assets/svg/garage.svg";
 import { ReactComponent as Swimming } from "../../assets/svg/swimming-pool.svg";
 import { ReactComponent as Elevator } from "../../assets/svg/elevator.svg";
 import { ReactComponent as Heating } from "../../assets/svg/heating.svg";
+import { ReactComponent as Calendar } from "../../assets/svg/calendar.svg";
 
 import { Link } from "react-router-dom";
 
@@ -156,7 +157,7 @@ const ImageSlider: React.FC = () => {
           </div>
           <div className="flex flex-row justify-between">
             <div className="flex flex-row items-center space-x-4">
-              <FaRulerCombined />
+              {/* <Calendar className="text-sm h-4 w-4 font-bold" /> */}
               <span className="text-sm font-bold">construction year</span>
             </div>
             <span className="text-sm">2021 </span>
@@ -231,7 +232,7 @@ const ImageSlider: React.FC = () => {
       </div>
       <div>
         <h4 className="text-lg font-thin  text-slate-800 mt-20 mb-6 ">
-          Outdoor features
+          Nearby Amenities
         </h4>
         <p className="my-4 text-sm font-bold">
           The above properties is within the following amenities
