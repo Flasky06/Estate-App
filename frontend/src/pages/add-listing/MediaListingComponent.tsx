@@ -22,6 +22,7 @@ function MediaListingComponent() {
           style={{ width: "100px", height: "100px" }}
         />
         <button
+          type="button"
           className="bg-red-500 hover:bg-red-700 text-white text-xs font-bold py-1 px-2 mt-1 rounded"
           onClick={() => handleRemoveFile(file.name)}
         >
@@ -36,12 +37,18 @@ function MediaListingComponent() {
     setFiles(files.filter((file) => file.name !== fileName));
   };
 
+  // Function to handle form submission
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle the form submission, for example, uploading to a server
+    console.log("Submitted files:", files);
+  };
+
   return (
     <div className="flex flex-col">
       <h3 className="font-bold text-2xl mb-4">Listing Media</h3>
-      <div className="flex flex-wrap mt-4 mb-2">{renderThumbnails()}</div>
-
-      <div className="container mx-auto p-4">
+      <form onSubmit={handleSubmit} className="container mx-auto p-4">
+        <div className="flex flex-wrap mt-4 mb-2">{renderThumbnails()}</div>
         <div
           {...getRootProps()}
           className="flex flex-col items-center justify-center w-full"
@@ -59,7 +66,10 @@ function MediaListingComponent() {
                 Drag 'n' drop some files here, or click to select files
               </p>
             )}
-            <button className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button
+              type="button"
+              className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
               Select Media
             </button>
           </div>
@@ -74,7 +84,13 @@ function MediaListingComponent() {
           <p>**** PDF files upload supported as well.</p>
           <p>***** Images might take longer to be processed.</p>
         </div>
-      </div>
+        <button
+          type="submit"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+        >
+          Next Media
+        </button>
+      </form>
     </div>
   );
 }

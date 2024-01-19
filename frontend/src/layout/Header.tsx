@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MdMenu } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isPropertiesDropdownOpen, setIsPropertiesDropdownOpen] =
@@ -12,7 +13,9 @@ const Header: React.FC = () => {
       <div className="flex items-center px-3">
         <div className="mr-12">logo</div>
         <div className="container  flex items-center justify-end ">
-          <div className="px-4 cursor-pointer">Home</div>
+          <div className="px-4 cursor-pointer">
+            <Link to="/">Home</Link>
+          </div>
           <div className="relative px-4">
             <button
               onClick={() =>
@@ -72,7 +75,7 @@ const Header: React.FC = () => {
           </div>
           <div>
             <button className=" bg-blue-500 text-white py-2 px-3 text-sm font-bold rounded">
-              Add Listing
+              <Link to="/create-listing"> Add Listing</Link>
             </button>
           </div>
         </div>
