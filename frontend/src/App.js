@@ -5,6 +5,7 @@ import Signup from "./pages/auth/Signup.tsx";
 import PropertyDetails from "./pages/PropertyDetails/index.tsx";
 import ForRent from "./pages/rental-properties/index.tsx";
 import SearchResults from "./pages/results/index.js";
+import CreateListing from "./pages/add-listing/Index.tsx";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/property-details" element={<PropertyDetails />} />
         <Route path="/for-rent" element={<ForRent />} />
         <Route path="/search" element={<SearchResults />} />
+        <Route path="/create-listing" element={<CreateListing />} />
       </Routes>
     </BrowserRouter>
   );
