@@ -3,8 +3,8 @@ import Header from "../../layout/Header.tsx";
 import DescriptionListingComponent from "./DescriptionListingComponent.tsx";
 import MediaListingComponent from "./MediaListingComponent.tsx";
 import LocationListingComponent from "./LocationListingComponent.tsx";
-import DetailsListingComponent from "./DetailsListingComponent.tsx";
 import AmenitiesListingComponent from "./AmenitiesListingComponent.tsx";
+import ListingDetailsComponent from "./ListingDetailsComponent.tsx";
 
 function CreateListing() {
   const [activeTab, setActiveTab] = useState("Description");
@@ -18,7 +18,7 @@ function CreateListing() {
       case "Location":
         return <LocationListingComponent />;
       case "Details":
-        return <DetailsListingComponent />;
+        return <ListingDetailsComponent />;
       case "Amenities":
         return <AmenitiesListingComponent />;
       default:
@@ -33,22 +33,31 @@ function CreateListing() {
         <div className=" max-w-4xl mx-auto py-2">
           <div className="flex justify-between space-x-10 mb-10">
             <div
-              className="font-bold"
+              className="font-bold cursor-pointer py-1 px-2"
               onClick={() => setActiveTab("Description")}
             >
               1. Description
             </div>
-            <div className="font-bold" onClick={() => setActiveTab("Media")}>
+            <div
+              className="font-bold cursor-pointer py-1 px-2"
+              onClick={() => setActiveTab("Media")}
+            >
               2. Media
             </div>
-            <div className="font-bold" onClick={() => setActiveTab("Location")}>
+            <div
+              className="font-bold cursor-pointer py-1 px-2"
+              onClick={() => setActiveTab("Location")}
+            >
               3. Location
             </div>
-            <div className="font-bold" onClick={() => setActiveTab("Details")}>
+            <div
+              className="font-bold cursor-pointer py-1 px-2"
+              onClick={() => setActiveTab("Details")}
+            >
               4. Details
             </div>
             <div
-              className="font-bold"
+              className="font-bold cursor-pointer py-1 px-2"
               onClick={() => setActiveTab("Amenities")}
             >
               5. Amenities
