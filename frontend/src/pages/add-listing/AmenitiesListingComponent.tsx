@@ -65,7 +65,7 @@ const AmenitiesListingComponent: React.FC = () => {
     <div className="p-4 bg-white">
       <h3 className="text-lg font-bold mb-4">Amenities and Features</h3>
       <form onSubmit={handleSubmit}>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2ls gap-4 mb-4">
           {/* Interior Details */}
           <div>
             <p className="font-bold mb-2">Interior Details</p>

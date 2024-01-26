@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-// Define a type for the form data
 type PropertyDetails = {
   size: number | "";
   rooms: number | "";
@@ -45,10 +44,6 @@ const ListingDetailsComponent: React.FC = () => {
     <div className="p-4 bg-white">
       <h3 className="text-lg font-bold mb-4">Property Details</h3>
       <form>
-        {/* Size field */}
-        {/* ... existing fields ... */}
-
-        {/* Rooms field */}
         <div className="mb-4">
           <label
             htmlFor="rooms"
