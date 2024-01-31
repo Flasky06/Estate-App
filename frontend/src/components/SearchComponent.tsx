@@ -16,9 +16,9 @@ const SearchComponent = () => {
   };
 
   return (
-    <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col text-sm ">
-      <div className="flex">
-        <div className="mb-4 md:mr-2 md:mb-0">
+    <div className="bg-white shadow-md rounded lg:px-8 lg:pt-6 lg:pb-8 lg:mb-4 flex flex-col text-sm ">
+      <div className="flex flex-col lg:flex-row">
+        <div className="lg:mb-4 md:mr-2 md:mb-0">
           <label
             className="block mb-2 text-sm font-bold text-gray-700"
             htmlFor="category"

@@ -13,7 +13,7 @@ const LocationCard: React.FC<LocationCardProps> = ({
 }) => {
   return (
     <div>
-      <div className="w-auto h-auto relative">
+      <div className="lg:w-auto w-full h-auto relative">
         <img src={image} alt={city} className="w-full" />
         <span className="absolute top-1 right-2 bg-slate-800 px-1 py-[1px] text-xs font-bold text-white">
           {city}

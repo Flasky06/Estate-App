@@ -11,4 +11,4 @@ CREATE TABLE users (
 
 -- insert users
 INSERT INTO users (user_name, user_email, user_password)
-VALUES ('bony', 'bony@gmail.com', 'qwertyui');
+VALUES ('bony', 'bony@gmail.com', 'bony12');

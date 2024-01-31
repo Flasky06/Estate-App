@@ -9,7 +9,7 @@ import FeaturedLocations from "./FeaturedLocations.tsx";
 
 function Home() {
   return (
-    <div className="bg-[#f7f7f7]">
+    <div className="bg-[#f7f7f7] mt-50">
       <Hero />
       <FeaturedLocations />
       <FeaturedProperty />

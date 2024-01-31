@@ -6,9 +6,9 @@ import HeroImage from "../assets/image/apartment.jpg";
 function Hero() {
   return (
     <div
-      className="h-96 flex items-end justify-center"
+      className="w-full h-screen  lg:h-96 flex items-end justify-center"
       style={{
-        backgroundImage: `url(${HeroImage})`, // Correct usage of the HeroImage variable
+        backgroundImage: `url(${HeroImage})`, 
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

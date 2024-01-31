@@ -9,10 +9,10 @@ const Header: React.FC = () => {
   const [isMenuDropdownOpen, setIsMenuDropdownOpen] = useState(false);
 
   return (
-    <nav className="w-full py-4 bg-white fixed z-20 top-0 shadow">
+    <nav className="max-w-md:hidden  w-full py-4 bg-white fixed z-20 top-0 shadow">
       <div className="flex items-center px-3">
-        <div className="mr-12">logo</div>
-        <div className="container  flex items-center justify-end ">
+        <div className="mr-12 p-1"><Link to='/'>logo</Link></div>
+        <div className="container  flex items-center justify-end">
           <div className="px-4 cursor-pointer">
             <Link to="/">Home</Link>
           </div>
